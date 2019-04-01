@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    
 </head>
 <body>
     <a href="html/index.html" >Dokumentacja techniczna</a>
+    <a href="manual.pdf">Dokumentacja użytkownika</a>
 </body>
 </html>
