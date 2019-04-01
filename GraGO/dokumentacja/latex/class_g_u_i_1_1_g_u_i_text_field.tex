@@ -1,0 +1,243 @@
+\section{Dokumentacja klasy G\+UI\+::G\+U\+I\+Text\+Field}
+\label{class_g_u_i_1_1_g_u_i_text_field}\index{GUI::GUITextField@{GUI::GUITextField}}
+
+
+Klasa reprezentuje elementy G\+UI typu pole tekstowe.  
+
+
+
+
+{\ttfamily \#include $<$G\+U\+I\+Text\+Field.\+h$>$}
+
+Diagram dziedziczenia dla G\+UI\+::G\+U\+I\+Text\+Field\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_g_u_i_1_1_g_u_i_text_field}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ G\+U\+I\+Text\+Field} (sf\+::\+Vector2f position=sf\+::\+Vector2f(0, 0), sf\+::\+Vector2f button\+Size=sf\+::\+Vector2f(50, 20), sf\+::\+Font $\ast$font=nullptr, std\+::string text=\char`\"{} \char`\"{}, \textbf{ G\+U\+I\+Element} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_aa016d557aac2ece2e073ba352fe0f35a}} 
+virtual \textbf{ $\sim$\+G\+U\+I\+Text\+Field} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+virtual void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Renderuje pole tekstowe. \end{DoxyCompactList}\item 
+virtual void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Odświeża stan obiektu. \end{DoxyCompactList}\item 
+void \textbf{ set\+Text} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia tekst wyświetlany w polu tekstowym. \end{DoxyCompactList}\item 
+void \textbf{ set\+Text\+Size} (unsigned size)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia rozmiar tekstu etykiety. \end{DoxyCompactList}\item 
+void \textbf{ set\+Font} (const sf\+::\+Font \&new\+Font)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia czcionkę etykiety. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+Text} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwraca tekst wpisany w polu tekstowym. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \textbf{ set\+Size\+Derivered} ()
+\begin{DoxyCompactList}\small\item\em Metoda reagująca na zmianę rozmiaru pola tekstowego. \end{DoxyCompactList}\item 
+void \textbf{ format\+Text} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozycjonuje tekst w polu tekstowym. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ focus}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentuje elementy G\+UI typu pole tekstowe. 
+
+Umożliwia wpisywanie danych z klawiatury oraz odczyt tekstu przez zewnętrzne obiekty. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_a9f7fda1abeb7b9b2992fa3d3d6a90541}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!GUITextField@{GUITextField}}
+\index{GUITextField@{GUITextField}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{GUITextField()}
+{\footnotesize\ttfamily G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::\+G\+U\+I\+Text\+Field (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position = {\ttfamily sf\+:\+:Vector2f(0,~0)},  }\item[{sf\+::\+Vector2f}]{button\+Size = {\ttfamily sf\+:\+:Vector2f(50,~20)},  }\item[{sf\+::\+Font $\ast$}]{font = {\ttfamily nullptr},  }\item[{std\+::string}]{text = {\ttfamily \char`\"{}~\char`\"{}},  }\item[{\textbf{ G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Inicjuje niezbędne pola na podstawie przekazanych argumentów. 
+\begin{DoxyParams}{Parametry}
+{\em position} & Pozycja względem rodzica. \\
+\hline
+{\em button\+Size} & Rozmiar pola tekstowego. \\
+\hline
+{\em font} & Wskaźnik do czcionki. \\
+\hline
+{\em text} & Tekst pola tekstowego. \\
+\hline
+{\em parent} & Wskaźnik na rodzica obiektu w hierarchi G\+UI. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_a638107ab718497338df05064bb35bbdf}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!draw@{draw}}
+\index{draw@{draw}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renderuje pole tekstowe. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & Obiekt na rzecz którego element jest renderowany. \\
+\hline
+{\em states} & Parametry renderowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a4ca6a6b66bde419fd2b1e80a4b54ccbf}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_a9e9d97b079b664abd52acf6e662f4e16}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!formatText@{formatText}}
+\index{formatText@{formatText}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{formatText()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::format\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda pozycjonuje tekst w polu tekstowym. 
+
+W przypadku zmiany rozmiaru pola tekstowego bądź wpisaniu do niego tekstu, pojawia się konieczność wyliczenia nowych koordynatów dla obiektu graficznego reprezentującego tekst. Metoda ta pozycjonuje tekst w taki sposób aby zawsze justował się do lewej krawędzi pola tekstowego oraz pozostawał na środku jego wysokości. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_ab7186c645c76cff7f3bc753fc17d3efe}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!getText@{getText}}
+\index{getText@{getText}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{getText()}
+{\footnotesize\ttfamily std\+::string G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda zwraca tekst wpisany w polu tekstowym. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Wpisany tekst. 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_a3e653cfa85e17da56be68c266ea6c12e}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!setFont@{setFont}}
+\index{setFont@{setFont}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{setFont()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::set\+Font (\begin{DoxyParamCaption}\item[{const sf\+::\+Font \&}]{new\+Font }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia czcionkę etykiety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em new\+Font} & Nowa czcionka tekstu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_a4c5741e31981bc0f9a877ce4af90f4bc}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!setSizeDerivered@{setSizeDerivered}}
+\index{setSizeDerivered@{setSizeDerivered}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{setSizeDerivered()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::set\+Size\+Derivered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Metoda reagująca na zmianę rozmiaru pola tekstowego. 
+
+Metoda ta dziedziczona jest z klasy \doxyref{G\+U\+I\+::\+G\+U\+I\+Element}{str.}{class_g_u_i_1_1_g_u_i_element} i wywoływana jest przez metodę set\+Size tejże klasy. Implementuje zachowanie się pola tekstowego po zmianie rozmiaru. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_ae2143b9625dc4175dfedeb0685b02f15}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_a5d755d73a59103134a0f7eea105f524f}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!setText@{setText}}
+\index{setText@{setText}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{setText()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia tekst wyświetlany w polu tekstowym. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em text} & Tekst do wyświetlania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_ac89506ea93f91ccebe14d97a0a2ba0ac}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!setTextSize@{setTextSize}}
+\index{setTextSize@{setTextSize}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{setTextSize()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::set\+Text\+Size (\begin{DoxyParamCaption}\item[{unsigned}]{size }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia rozmiar tekstu etykiety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em size} & Nowy rozmiar tekstu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_a23fc31e8a2c93976e5dcd58bd0a3c1ff}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!update@{update}}
+\index{update@{update}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Odświeża stan obiektu. 
+
+Sprawdza czy obiekt posiada fokus tzn. czy użytkownik kliknął na niego w celu wpisania tekstu. Jeśli tak zbiera informację o wciśniętych klawiszach i wpisuje je w pole tekstowe. 
+\begin{DoxyParams}{Parametry}
+{\em e} & Zdarzenie \\
+\hline
+{\em window} & Okno główne aplikacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a5ca855fc851c8d575635d66fafdd3851}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_text_field_aa14774b959793ec383f3dc9a85e3a3ae}} 
+\index{GUI::GUITextField@{GUI::GUITextField}!focus@{focus}}
+\index{focus@{focus}!GUI::GUITextField@{GUI::GUITextField}}
+\subsubsection{focus}
+{\footnotesize\ttfamily bool G\+U\+I\+::\+G\+U\+I\+Text\+Field\+::focus\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pole przechowuje informację o tym czy pole tekstowe posiada fokus -\/ czy możliwe jest wpisywanie danych 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Text\+Field.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Text\+Field.\+cpp\end{DoxyCompactItemize}

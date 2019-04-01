@@ -1,0 +1,304 @@
+\section{Dokumentacja klasy G\+UI\+::G\+U\+I\+Element}
+\label{class_g_u_i_1_1_g_u_i_element}\index{GUI::GUIElement@{GUI::GUIElement}}
+
+
+Abstrakcyjna klasa bazowa wszystkich graficznych elementów G\+UI.  
+
+
+
+
+{\ttfamily \#include $<$G\+U\+I\+Element.\+h$>$}
+
+Diagram dziedziczenia dla G\+UI\+::G\+U\+I\+Element\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.393162cm]{class_g_u_i_1_1_g_u_i_element}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ G\+U\+I\+Element} (sf\+::\+Vector2f position=sf\+::\+Vector2f(0, 0), \textbf{ G\+U\+I\+Element} $\ast$parent=nullptr, bool visi=true)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a98fe7eaa743fb072ed5ba499441c35d6}} 
+virtual \textbf{ $\sim$\+G\+U\+I\+Element} ()
+\begin{DoxyCompactList}\small\item\em Writualny destruktor. \end{DoxyCompactList}\item 
+bool \textbf{ is\+Visible} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwraca informację o tym czy obiekt jest widoczny. \end{DoxyCompactList}\item 
+void \textbf{ show} ()
+\begin{DoxyCompactList}\small\item\em Metoda zmienia stan obiektu na widoczny. \end{DoxyCompactList}\item 
+void \textbf{ hide} ()
+\begin{DoxyCompactList}\small\item\em Metoda zmienia stan obiektu na ukryty. \end{DoxyCompactList}\item 
+\textbf{ G\+U\+I\+Element} $\ast$ \textbf{ get\+Parent} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca wskaźnik do rodzica w hierarchi G\+UI. \end{DoxyCompactList}\item 
+void \textbf{ set\+Parent} (\textbf{ G\+U\+I\+Element} $\ast$new\+Parent)
+\begin{DoxyCompactList}\small\item\em Metoda pozwala zmienić rodzica w hierarchi G\+UI. \end{DoxyCompactList}\item 
+void \textbf{ set\+Size} (sf\+::\+Vector2f s)
+\begin{DoxyCompactList}\small\item\em Metoda pozwala zmienić rozmiar obiektu. \end{DoxyCompactList}\item 
+void \textbf{ set\+Size} (float width, float height)
+\begin{DoxyCompactList}\small\item\em Metoda pozwala zmienić rozmiar obiektu. \end{DoxyCompactList}\item 
+void \textbf{ set\+Size} (sf\+::\+Vector2u s)
+\begin{DoxyCompactList}\small\item\em Metoda pozwala zmienić rozmiar obiektu. \end{DoxyCompactList}\item 
+virtual void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const =0
+\begin{DoxyCompactList}\small\item\em Czysto wirtualna metoda odpowiadająca za renderowanie obiektu. \end{DoxyCompactList}\item 
+virtual void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Czysto wirtualna metoda odpowiadająca za odświeżanie obiektu. \end{DoxyCompactList}\item 
+virtual sf\+::\+Vector2f \textbf{ get\+Size} () const
+\begin{DoxyCompactList}\small\item\em Zwraca rozmiar elementu G\+UI. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \textbf{ get\+Position\+Realitve} ()
+\begin{DoxyCompactList}\small\item\em Zwraca bezwzględne położenie obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \textbf{ set\+Size\+Derivered} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja reagująca na zmianę rozmiaru obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Abstrakcyjna klasa bazowa wszystkich graficznych elementów G\+UI. 
+
+Dostarcza wszystkim klasom pochodnym podstawowej możliwości manipulacji obiektami graficznymi. Posiada czysto wirtualne funkcje draw i update, by każdy element interfejsu mógł samodzielnie odświeżać i renderować siebie wedle indywidualnych potrzeb. Umożliwia wizualne \char`\"{}ukrycie\char`\"{} obiektu oraz maniuplację jego położeniem/punktem transformacji (dziedziczone z sf\+::\+Transformable). Wymusza w klasach potomnych implementację metody \doxyref{set\+Size\+Derivered()}{str.}{class_g_u_i_1_1_g_u_i_element_ae2143b9625dc4175dfedeb0685b02f15} odpowiadającej za reakcję indywidualną reakcję klasy na zewnętrzną, wymuszoną zmianę rozmiaru elementu graficznego. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_acfbb5dfb1ec6a663191bc311a3daa2b1}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!GUIElement@{GUIElement}}
+\index{GUIElement@{GUIElement}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{GUIElement()}
+{\footnotesize\ttfamily G\+U\+I\+::\+G\+U\+I\+Element\+::\+G\+U\+I\+Element (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position = {\ttfamily sf\+:\+:Vector2f(0,0)},  }\item[{\textbf{ G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily nullptr},  }\item[{bool}]{visi = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor. 
+
+Posiada parametry domyślne pozwalające na modyfikację podstawowych parametrów obiektu interfejsu graficznego. 
+\begin{DoxyParams}{Parametry}
+{\em position} & Pozycja elementu względem rodzica. \\
+\hline
+{\em parent} & Wskaźnik na rodzica (element nadrzędny hierarchi G\+UI). \\
+\hline
+{\em visi} & Określa czy element ma być widoczny (renderowany). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a4ca6a6b66bde419fd2b1e80a4b54ccbf}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!draw@{draw}}
+\index{draw@{draw}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily virtual void G\+U\+I\+::\+G\+U\+I\+Element\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Czysto wirtualna metoda odpowiadająca za renderowanie obiektu. 
+
+Do implementacji w klasach pochodnych. 
+\begin{DoxyParams}{Parametry}
+{\em target} & Obiekt na rzecz którego renderowany jest element (np. okno gry). \\
+\hline
+{\em states} & Parametry renderowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementowany w \textbf{ G\+U\+I\+::\+G\+U\+I\+Button} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_button_aad188df5d2b38d841dab1a9574dbfcd2}, \textbf{ Game\+G\+U\+I\+View} \doxyref{}{str.}{class_game_g_u_i_view_af930778af29e00bbb8da7d2e0c7cd143}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Label} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_label_a4fcf6d49c21358f938f2367ea9dcf6fb}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Group} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_group_aaefc195568224ea28e819a1616a3c416}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Line} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_line_acd7b92838ebbd6971c685c90662e6f19}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Text\+Field} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_text_field_a638107ab718497338df05064bb35bbdf} i \textbf{ G\+U\+I\+::\+G\+U\+I\+Image} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_image_ae84becdfe48dda150fdf08a70ecae7c4}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a2425486a1a58785a89a9d6415237b186}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!getParent@{getParent}}
+\index{getParent@{getParent}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{getParent()}
+{\footnotesize\ttfamily \textbf{ G\+U\+I\+Element}$\ast$ G\+U\+I\+::\+G\+U\+I\+Element\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zwraca wskaźnik do rodzica w hierarchi G\+UI. 
+
+\begin{DoxyReturn}{Zwraca}
+G\+U\+I\+Element$\ast$ Wskaźnik na rodzica. 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_aa91649901840a0ee8b69fa12bff2705d}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!getPositionRealitve@{getPositionRealitve}}
+\index{getPositionRealitve@{getPositionRealitve}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{getPositionRealitve()}
+{\footnotesize\ttfamily sf\+::\+Vector2f G\+U\+I\+::\+G\+U\+I\+Element\+::get\+Position\+Realitve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca bezwzględne położenie obiektu. 
+
+Zwraca położenie obiektu względem okna gry a nie rodzica. \begin{DoxyReturn}{Zwraca}
+sf\+::\+Vector2f Położenie obiektu. 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a7d53875f2d198738750dfc14693cdc38}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!getSize@{getSize}}
+\index{getSize@{getSize}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{getSize()}
+{\footnotesize\ttfamily virtual sf\+::\+Vector2f G\+U\+I\+::\+G\+U\+I\+Element\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Zwraca rozmiar elementu G\+UI. 
+
+Metoda wirtualna. \begin{DoxyReturn}{Zwraca}
+sf\+::\+Vector2f Rozmiar elementu. 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a85de58e55b5ba1601e9c0978af0e5eb3}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!hide@{hide}}
+\index{hide@{hide}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{hide()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Element\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia stan obiektu na ukryty. 
+
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a1bd06c15007fa48fe58890477106b781}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!isVisible@{isVisible}}
+\index{isVisible@{isVisible}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{isVisible()}
+{\footnotesize\ttfamily bool G\+U\+I\+::\+G\+U\+I\+Element\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda zwraca informację o tym czy obiekt jest widoczny. 
+
+\begin{DoxyReturn}{Zwraca}
+bool Prawda jeśli obiekt jest widoczny. 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a64aaa7c4c2934b5fae89955fee5b403c}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!setParent@{setParent}}
+\index{setParent@{setParent}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{setParent()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Element\+::set\+Parent (\begin{DoxyParamCaption}\item[{\textbf{ G\+U\+I\+Element} $\ast$}]{new\+Parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda pozwala zmienić rodzica w hierarchi G\+UI. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em new\+Parent} & Nowy rodzic. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a6fca754d725c0ff8e6ea5ef1b769c3c1}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!setSize@{setSize}}
+\index{setSize@{setSize}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{setSize()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Element\+::set\+Size (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda pozwala zmienić rozmiar obiektu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em s} & Nowy rozmiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a3cf6bd2a8154103cf426b61c9a56b922}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!setSize@{setSize}}
+\index{setSize@{setSize}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{setSize()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Element\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda pozwala zmienić rozmiar obiektu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em width} & Nowa szerokość obiektu. \\
+\hline
+{\em height} & Nowa wysokość obiektu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a5361b47a6c150156e046e94273728e41}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!setSize@{setSize}}
+\index{setSize@{setSize}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{setSize()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Element\+::set\+Size (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2u}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda pozwala zmienić rozmiar obiektu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em s} & Nowy rozmiar obiektu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_ae2143b9625dc4175dfedeb0685b02f15}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!setSizeDerivered@{setSizeDerivered}}
+\index{setSizeDerivered@{setSizeDerivered}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{setSizeDerivered()}
+{\footnotesize\ttfamily virtual void G\+U\+I\+::\+G\+U\+I\+Element\+::set\+Size\+Derivered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Funkcja reagująca na zmianę rozmiaru obiektu. 
+
+Czysto wirtualna funkcja do implementacji w klasach bazowych. Wywoływana jest przez publiczną metodę \doxyref{set\+Size()}{str.}{class_g_u_i_1_1_g_u_i_element_a6fca754d725c0ff8e6ea5ef1b769c3c1}. Każdy potomek może indywidualnie reagować na potrzebę zmiany rozmiaru. 
+
+Implementowany w \textbf{ G\+U\+I\+::\+G\+U\+I\+Button} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_button_a0782335a814796badf13de6f5cac0955}, \textbf{ Game\+G\+U\+I\+View} \doxyref{}{str.}{class_game_g_u_i_view_a69cbff9153850c8ab8a16762b07be510}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Group} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_group_a3822f6c4643a251470dfead34d234eb5}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Text\+Field} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_text_field_a4c5741e31981bc0f9a877ce4af90f4bc}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Label} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_label_a0ebe7595708156e113c30b95ddc0cb85}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Line} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_line_a6bcc82d7690ed7db47c2a8204a6d8097} i \textbf{ G\+U\+I\+::\+G\+U\+I\+Image} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_image_ae00794938cbaeb1893cdeaf6698a2ca2}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a2f63c98cda8525644ed6bb9a0f173d07}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!show@{show}}
+\index{show@{show}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{show()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Element\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia stan obiektu na widoczny. 
+
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_element_a5ca855fc851c8d575635d66fafdd3851}} 
+\index{GUI::GUIElement@{GUI::GUIElement}!update@{update}}
+\index{update@{update}!GUI::GUIElement@{GUI::GUIElement}}
+\subsubsection{update()}
+{\footnotesize\ttfamily virtual void G\+U\+I\+::\+G\+U\+I\+Element\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Czysto wirtualna metoda odpowiadająca za odświeżanie obiektu. 
+
+Do implementacji w klasach pochodnych. 
+\begin{DoxyParams}{Parametry}
+{\em e} & Zdarzenie. \\
+\hline
+{\em window} & Okno głowne gry. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementowany w \textbf{ G\+U\+I\+::\+G\+U\+I\+Button} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_button_a24de43c874d0ddc970700b03f24ec233}, \textbf{ Game\+G\+U\+I\+View} \doxyref{}{str.}{class_game_g_u_i_view_a4990a39e751f85d8f25ae30b33fae5bb}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Label} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_label_a7624f40f03fb5ce9c2c2d64053d6bfc1}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Group} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_group_ae6c42ff4c7d90095b5a7f452d4e0085d}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Line} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_line_a002436f1fd9ac6f3e1cefa8e07375852}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Text\+Field} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_text_field_a23fc31e8a2c93976e5dcd58bd0a3c1ff}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Tickbox} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_tickbox_ae1ba0c02a5098856e9b488b57eb9cca9}, \textbf{ Settings\+State} \doxyref{}{str.}{class_settings_state_a19a7c04911e40ed23f29c9839c164ed2}, \textbf{ G\+U\+I\+::\+G\+U\+I\+Image} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_image_af4ba338d2471d89721eecc04b95c18b8}, \textbf{ Menu\+State} \doxyref{}{str.}{class_menu_state_aab9ffa133893dd7c4d6756a6b3ca9c8b}, \textbf{ Alert\+State} \doxyref{}{str.}{class_alert_state_afc08c3d0bb4c5865762ce882996ffd5f} i \textbf{ Game\+Over\+State} \doxyref{}{str.}{class_game_over_state_a57290f9ae82b16d416d6252a613c62f3}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Element.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Element.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Plik źródłowy C:/Users/Karol/source/repos/GraGO/GraGO/BaseState.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/Users/Karol/source/repos/GraGO/GraGO/BaseState.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;Utilities.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;SFML\Window\Event.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SFML\Graphics\RenderWindow.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="class_state_manager.html">StateManager</a>;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_base_state.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_base_state.html">BaseState</a></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_state_manager.html">StateManager</a>* stateManager; </div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_base_state.html#ad94cf2a5facbc05c79b9a549aa1a74b2">   16</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_utilities.html">Utilities</a>&amp; <a class="code" href="class_base_state.html#ad94cf2a5facbc05c79b9a549aa1a74b2">utilities</a>; </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_base_state.html#aa354476c1808c21cb4da79f46ab6e117">   25</a></span>&#160;    <a class="code" href="class_base_state.html#aa354476c1808c21cb4da79f46ab6e117">BaseState</a>(<a class="code" href="class_state_manager.html">StateManager</a>* myStateManager,<span class="keyword">const</span> <a class="code" href="struct_utilities.html">Utilities</a>&amp; context) :stateManager(myStateManager),<a class="code" href="class_base_state.html#ad94cf2a5facbc05c79b9a549aa1a74b2">utilities</a>(context) {}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_base_state.html#a657ab538af26e5afd8b29a7dea305c5f">   28</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_base_state.html#a657ab538af26e5afd8b29a7dea305c5f">~BaseState</a>() {}</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_base_state.html#a2a79cd27f736ace4d63c996974773e99">update</a>(sf::Event&amp; e, sf::RenderWindow&amp; window) = 0;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_base_state.html#aadc7c0356e6ffbda2a51e1aaad994dfb">draw</a>() <span class="keyword">const</span>= 0;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_state_manager.html">StateManager</a>* <a class="code" href="class_base_state.html#a3d830cdd11d64bb2d9c2579ea2b44f43">getStateManager</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="ttc" id="class_base_state_html_a657ab538af26e5afd8b29a7dea305c5f"><div class="ttname"><a href="class_base_state.html#a657ab538af26e5afd8b29a7dea305c5f">BaseState::~BaseState</a></div><div class="ttdeci">virtual ~BaseState()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> BaseState.h:28</div></div>
+<div class="ttc" id="class_base_state_html_ad94cf2a5facbc05c79b9a549aa1a74b2"><div class="ttname"><a href="class_base_state.html#ad94cf2a5facbc05c79b9a549aa1a74b2">BaseState::utilities</a></div><div class="ttdeci">const Utilities &amp; utilities</div><div class="ttdef"><b>Definition:</b> BaseState.h:16</div></div>
+<div class="ttc" id="struct_utilities_html"><div class="ttname"><a href="struct_utilities.html">Utilities</a></div><div class="ttdoc">Struktura przechowująca przydatne innym klasom obiekty, zmienne, charakterystyczne w całej grze.</div><div class="ttdef"><b>Definition:</b> Utilities.h:15</div></div>
+<div class="ttc" id="class_state_manager_html"><div class="ttname"><a href="class_state_manager.html">StateManager</a></div><div class="ttdoc">Klasa reprezentująca menadżer stanów gry.</div><div class="ttdef"><b>Definition:</b> StateManager.h:18</div></div>
+<div class="ttc" id="class_base_state_html_aa354476c1808c21cb4da79f46ab6e117"><div class="ttname"><a href="class_base_state.html#aa354476c1808c21cb4da79f46ab6e117">BaseState::BaseState</a></div><div class="ttdeci">BaseState(StateManager *myStateManager, const Utilities &amp;context)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> BaseState.h:25</div></div>
+<div class="ttc" id="class_base_state_html"><div class="ttname"><a href="class_base_state.html">BaseState</a></div><div class="ttdoc">Abstrakcyjna klasa bazowa dla wszystkich klas stanów gry.</div><div class="ttdef"><b>Definition:</b> BaseState.h:11</div></div>
+<div class="ttc" id="class_base_state_html_a2a79cd27f736ace4d63c996974773e99"><div class="ttname"><a href="class_base_state.html#a2a79cd27f736ace4d63c996974773e99">BaseState::update</a></div><div class="ttdeci">virtual void update(sf::Event &amp;e, sf::RenderWindow &amp;window)=0</div><div class="ttdoc">Czysto wirtualna metoda odpowiadająca za odświeżanie stanu obiektów.</div></div>
+<div class="ttc" id="class_base_state_html_a3d830cdd11d64bb2d9c2579ea2b44f43"><div class="ttname"><a href="class_base_state.html#a3d830cdd11d64bb2d9c2579ea2b44f43">BaseState::getStateManager</a></div><div class="ttdeci">StateManager * getStateManager() const</div><div class="ttdoc">Metoda zwracająca wskaźnik do menadżera stanów.</div><div class="ttdef"><b>Definition:</b> BaseState.cpp:6</div></div>
+<div class="ttc" id="class_base_state_html_aadc7c0356e6ffbda2a51e1aaad994dfb"><div class="ttname"><a href="class_base_state.html#aadc7c0356e6ffbda2a51e1aaad994dfb">BaseState::draw</a></div><div class="ttdeci">virtual void draw() const =0</div><div class="ttdoc">Czysto wirtualna metoda odpowiadająca za renderowanie stanu gry.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

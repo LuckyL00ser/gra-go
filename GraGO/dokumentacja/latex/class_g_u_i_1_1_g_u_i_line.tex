@@ -1,0 +1,215 @@
+\section{Dokumentacja klasy G\+UI\+::G\+U\+I\+Line}
+\label{class_g_u_i_1_1_g_u_i_line}\index{GUI::GUILine@{GUI::GUILine}}
+
+
+Klasa reprezentująca element G\+UI typu linia.  
+
+
+
+
+{\ttfamily \#include $<$G\+U\+I\+Line.\+h$>$}
+
+Diagram dziedziczenia dla G\+UI\+::G\+U\+I\+Line\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_g_u_i_1_1_g_u_i_line}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ G\+U\+I\+Line} (sf\+::\+Vector2f position=sf\+::\+Vector2f(0, 0))
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+G\+U\+I\+Line} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ set\+Start\+Vertex\+Position} (sf\+::\+Vector2f position)
+\begin{DoxyCompactList}\small\item\em Metoda ustawia pozycję początku linii. \end{DoxyCompactList}\item 
+void \textbf{ set\+End\+Vertex\+Position} (sf\+::\+Vector2f position)
+\begin{DoxyCompactList}\small\item\em Metoda ustawia pozycję końca linii. \end{DoxyCompactList}\item 
+void \textbf{ set\+Start\+Vertex\+Color} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Metoda ustawia kolor początku lini. \end{DoxyCompactList}\item 
+void \textbf{ set\+End\+Vertex\+Color} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Metoda ustawia kolor końca lini. \end{DoxyCompactList}\item 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Renderuje linię. \end{DoxyCompactList}\item 
+void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Odświeża stan obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ set\+Size\+Derivered} ()
+\begin{DoxyCompactList}\small\item\em Metoda reagująca na zmianę rozmiaru linii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentująca element G\+UI typu linia. 
+
+Klasa wykorzystywana jest przy tworzeniu planszy gry. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_ad409577b19ea03c15aa20135133d1d91}} 
+\index{GUI::GUILine@{GUI::GUILine}!GUILine@{GUILine}}
+\index{GUILine@{GUILine}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{GUILine()}
+{\footnotesize\ttfamily G\+U\+I\+::\+G\+U\+I\+Line\+::\+G\+U\+I\+Line (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position = {\ttfamily sf\+:\+:Vector2f(0,~0)} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Może ustawić linię na konkretnej pozycji. Domyślny kolor lini to czarny. \mbox{\label{class_g_u_i_1_1_g_u_i_line_aaddcf45971dcc607a30a9447027119c5}} 
+\index{GUI::GUILine@{GUI::GUILine}!````~GUILine@{$\sim$GUILine}}
+\index{````~GUILine@{$\sim$GUILine}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{$\sim$GUILine()}
+{\footnotesize\ttfamily G\+U\+I\+::\+G\+U\+I\+Line\+::$\sim$\+G\+U\+I\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Zwalnia pamięć po obiekcie. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_acd7b92838ebbd6971c685c90662e6f19}} 
+\index{GUI::GUILine@{GUI::GUILine}!draw@{draw}}
+\index{draw@{draw}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Line\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renderuje linię. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & Obiekt na rzecz którego element jest renderowany. \\
+\hline
+{\em states} & Parametry renderowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a4ca6a6b66bde419fd2b1e80a4b54ccbf}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_aa71d00f602a52a99d81f4d9fe1c3db5e}} 
+\index{GUI::GUILine@{GUI::GUILine}!setEndVertexColor@{setEndVertexColor}}
+\index{setEndVertexColor@{setEndVertexColor}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{setEndVertexColor()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Line\+::set\+End\+Vertex\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ustawia kolor końca lini. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & Kolor końca linii. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_a8825a67e2330cc756f8c9188507c6d76}} 
+\index{GUI::GUILine@{GUI::GUILine}!setEndVertexPosition@{setEndVertexPosition}}
+\index{setEndVertexPosition@{setEndVertexPosition}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{setEndVertexPosition()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Line\+::set\+End\+Vertex\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ustawia pozycję końca linii. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em position} & Pozycja końca linii. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_a6bcc82d7690ed7db47c2a8204a6d8097}} 
+\index{GUI::GUILine@{GUI::GUILine}!setSizeDerivered@{setSizeDerivered}}
+\index{setSizeDerivered@{setSizeDerivered}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{setSizeDerivered()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Line\+::set\+Size\+Derivered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Metoda reagująca na zmianę rozmiaru linii. 
+
+Metoda ta dziedziczona jest z klasy \doxyref{G\+U\+I\+::\+G\+U\+I\+Element}{str.}{class_g_u_i_1_1_g_u_i_element} i wywoływana jest przez metodę set\+Size tejże klasy. Implementuje zachowanie się obiektu klasy \doxyref{G\+U\+I\+::\+G\+U\+I\+Line}{str.}{class_g_u_i_1_1_g_u_i_line} po zmianie rozmiaru. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_ae2143b9625dc4175dfedeb0685b02f15}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_a4157218a270c0327fb64092fbf033ae7}} 
+\index{GUI::GUILine@{GUI::GUILine}!setStartVertexColor@{setStartVertexColor}}
+\index{setStartVertexColor@{setStartVertexColor}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{setStartVertexColor()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Line\+::set\+Start\+Vertex\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ustawia kolor początku lini. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & Kolor początku linii. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_a475e8e86bb4aa2152eddb22502a931a4}} 
+\index{GUI::GUILine@{GUI::GUILine}!setStartVertexPosition@{setStartVertexPosition}}
+\index{setStartVertexPosition@{setStartVertexPosition}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{setStartVertexPosition()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Line\+::set\+Start\+Vertex\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ustawia pozycję początku linii. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em position} & Pozycja początku linii. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_line_a002436f1fd9ac6f3e1cefa8e07375852}} 
+\index{GUI::GUILine@{GUI::GUILine}!update@{update}}
+\index{update@{update}!GUI::GUILine@{GUI::GUILine}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Line\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Odświeża stan obiektu. 
+
+Dla lini nie ma zastosowania. Wymaga jednak implementacji dziedzicząc z \doxyref{G\+U\+I\+Element}{str.}{class_g_u_i_1_1_g_u_i_element}. 
+\begin{DoxyParams}{Parametry}
+{\em e} & Zdarzenie \\
+\hline
+{\em window} & Okno główne aplikacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a5ca855fc851c8d575635d66fafdd3851}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Line.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Line.\+cpp\end{DoxyCompactItemize}

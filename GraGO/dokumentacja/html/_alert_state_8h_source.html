@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Plik źródłowy C:/Users/Karol/source/repos/GraGO/GraGO/AlertState.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/Users/Karol/source/repos/GraGO/GraGO/AlertState.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;BaseState.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;GUIButton.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;GUILabel.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;GUIGroup.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;StateManager.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>GUI;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_alert_state.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_alert_state.html">AlertState</a> :  <span class="keyword">public</span> <a class="code" href="class_base_state.html">BaseState</a>, <span class="keyword">public</span> <a class="code" href="class_g_u_i_1_1_g_u_i_group.html">GUIGroup</a></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_g_u_i_1_1_g_u_i_button.html">GUIButton</a>* back; </div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_g_u_i_1_1_g_u_i_label.html">GUILabel</a>* info; </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> createGUI();   </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> goBack();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::string message; </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_alert_state.html">AlertState</a>(<a class="code" href="class_state_manager.html">StateManager</a>* state, <span class="keyword">const</span> <a class="code" href="struct_utilities.html">Utilities</a>&amp; utilities,std::string msg);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ~<a class="code" href="class_alert_state.html">AlertState</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> update(sf::Event&amp; e, sf::RenderWindow&amp; window);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> draw() <span class="keyword">const</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="ttc" id="struct_utilities_html"><div class="ttname"><a href="struct_utilities.html">Utilities</a></div><div class="ttdoc">Struktura przechowująca przydatne innym klasom obiekty, zmienne, charakterystyczne w całej grze.</div><div class="ttdef"><b>Definition:</b> Utilities.h:15</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_button_html"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_button.html">GUI::GUIButton</a></div><div class="ttdoc">Klasa reprezentująca przycisk.</div><div class="ttdef"><b>Definition:</b> GUIButton.h:21</div></div>
+<div class="ttc" id="class_state_manager_html"><div class="ttname"><a href="class_state_manager.html">StateManager</a></div><div class="ttdoc">Klasa reprezentująca menadżer stanów gry.</div><div class="ttdef"><b>Definition:</b> StateManager.h:18</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_group_html"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_group.html">GUI::GUIGroup</a></div><div class="ttdoc">Klasa umożlwia grupowanie obiektów przestrzeni nazw GUI.</div><div class="ttdef"><b>Definition:</b> GUIGroup.h:15</div></div>
+<div class="ttc" id="class_base_state_html"><div class="ttname"><a href="class_base_state.html">BaseState</a></div><div class="ttdoc">Abstrakcyjna klasa bazowa dla wszystkich klas stanów gry.</div><div class="ttdef"><b>Definition:</b> BaseState.h:11</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_label_html"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_label.html">GUI::GUILabel</a></div><div class="ttdoc">Klasa reprezentująca napis z tłem i obramowaniem.</div><div class="ttdef"><b>Definition:</b> GUILabel.h:12</div></div>
+<div class="ttc" id="class_alert_state_html"><div class="ttname"><a href="class_alert_state.html">AlertState</a></div><div class="ttdoc">Klasa stanu gry wyświetlającego komunikat.</div><div class="ttdef"><b>Definition:</b> AlertState.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

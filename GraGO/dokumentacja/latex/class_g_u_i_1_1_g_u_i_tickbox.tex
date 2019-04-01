@@ -1,0 +1,169 @@
+\section{Dokumentacja klasy G\+UI\+::G\+U\+I\+Tickbox}
+\label{class_g_u_i_1_1_g_u_i_tickbox}\index{GUI::GUITickbox@{GUI::GUITickbox}}
+
+
+Klasa G\+UI typu tickbox (pole znacznikowe)  
+
+
+
+
+{\ttfamily \#include $<$G\+U\+I\+Tickbox.\+h$>$}
+
+Diagram dziedziczenia dla G\+UI\+::G\+U\+I\+Tickbox\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_g_u_i_1_1_g_u_i_tickbox}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ G\+U\+I\+Tickbox} (sf\+::\+Vector2f position=sf\+::\+Vector2f(0, 0), sf\+::\+Vector2f button\+Size=sf\+::\+Vector2f(50, 20), sf\+::\+Font $\ast$font=nullptr, \textbf{ G\+U\+I\+Element} $\ast$parent=nullptr, Event\+Callback cb=nullptr)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\label{class_g_u_i_1_1_g_u_i_tickbox_a4162e982f2967822bfe8d4e974c25aaa}} 
+virtual \textbf{ $\sim$\+G\+U\+I\+Tickbox} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+bool \textbf{ get\+Checked} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca informację o tym czy pole jest zaznaczone. \end{DoxyCompactList}\item 
+void \textbf{ set\+Checked} (bool c)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia stan wyboru. \end{DoxyCompactList}\item 
+void \textbf{ set\+Checked\+Fill\+Color} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia kolor elementu graficznego po wybraniu. \end{DoxyCompactList}\item 
+void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Odświeża stan obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \textbf{ derived\+Class\+Reaction} ()
+\begin{DoxyCompactList}\small\item\em Metoda reagująca na kliknięcie w pole znacznikowe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Klasa G\+UI typu tickbox (pole znacznikowe) 
+
+Umożliwia wybranie czy zadana opcja ma byc aktywna czy też nie. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_g_u_i_1_1_g_u_i_tickbox_a8414e934f7021c28d899f4296b65a999}} 
+\index{GUI::GUITickbox@{GUI::GUITickbox}!GUITickbox@{GUITickbox}}
+\index{GUITickbox@{GUITickbox}!GUI::GUITickbox@{GUI::GUITickbox}}
+\subsubsection{GUITickbox()}
+{\footnotesize\ttfamily G\+U\+I\+::\+G\+U\+I\+Tickbox\+::\+G\+U\+I\+Tickbox (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position = {\ttfamily sf\+:\+:Vector2f(0,~0)},  }\item[{sf\+::\+Vector2f}]{button\+Size = {\ttfamily sf\+:\+:Vector2f(50,~20)},  }\item[{sf\+::\+Font $\ast$}]{font = {\ttfamily nullptr},  }\item[{\textbf{ G\+U\+I\+Element} $\ast$}]{parent = {\ttfamily nullptr},  }\item[{Event\+Callback}]{cb = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Inicjuje niezbędne pola na podstawie przekazanych argumentów. 
+\begin{DoxyParams}{Parametry}
+{\em position} & Pozycja względem rodzica. \\
+\hline
+{\em button\+Size} & Rozmiar pola znacznikowego. \\
+\hline
+{\em font} & Wskaźnik do czcionki.\\
+\hline
+{\em parent} & Wskaźnik na rodzica obiektu w hierarchi G\+UI. \\
+\hline
+{\em cb} & Funkcja zewnętrznego obiektu wywoływana w momencie kliknięcia na pole tekstowe. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_tickbox_a4c055b22195bdf2143fd9fb254e6d0f9}} 
+\index{GUI::GUITickbox@{GUI::GUITickbox}!derivedClassReaction@{derivedClassReaction}}
+\index{derivedClassReaction@{derivedClassReaction}!GUI::GUITickbox@{GUI::GUITickbox}}
+\subsubsection{derivedClassReaction()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Tickbox\+::derived\+Class\+Reaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Metoda reagująca na kliknięcie w pole znacznikowe. 
+
+Metoda ta dziedziczona jest z klasy \doxyref{G\+U\+I\+::\+G\+U\+I\+Button}{str.}{class_g_u_i_1_1_g_u_i_button} i wywoływana jest podczas odświeżania obiektu tej klasy jeśli dojdzie do kliknięcia na nim. Implementuje reakcję tej klasy na kliknięcie tj. zmiana stanu pola znacznikowego, zmiana zaznaczenia. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Reimplementowana z \textbf{ G\+U\+I\+::\+G\+U\+I\+Button} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_button_a8bf266877d0e354524a53142fbb826f0}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_tickbox_ae029ea984bbee5bf5ff9c6de2cb8770a}} 
+\index{GUI::GUITickbox@{GUI::GUITickbox}!getChecked@{getChecked}}
+\index{getChecked@{getChecked}!GUI::GUITickbox@{GUI::GUITickbox}}
+\subsubsection{getChecked()}
+{\footnotesize\ttfamily bool G\+U\+I\+::\+G\+U\+I\+Tickbox\+::get\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zwraca informację o tym czy pole jest zaznaczone. 
+
+\begin{DoxyReturn}{Zwraca}
+bool Zwraca prawdę jeśli stan elementu jest ustawiony na \char`\"{}prawda\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_tickbox_a3b9600315922d6e3981f4a30634c2b71}} 
+\index{GUI::GUITickbox@{GUI::GUITickbox}!setChecked@{setChecked}}
+\index{setChecked@{setChecked}!GUI::GUITickbox@{GUI::GUITickbox}}
+\subsubsection{setChecked()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Tickbox\+::set\+Checked (\begin{DoxyParamCaption}\item[{bool}]{c }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia stan wyboru. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em c} & Stan zaznaczenia, prawda -\/ opcja wybrana, fałsz -\/ opcja nieaktywna. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_tickbox_adf53446bb51cfea15739ddbb4da7de3f}} 
+\index{GUI::GUITickbox@{GUI::GUITickbox}!setCheckedFillColor@{setCheckedFillColor}}
+\index{setCheckedFillColor@{setCheckedFillColor}!GUI::GUITickbox@{GUI::GUITickbox}}
+\subsubsection{setCheckedFillColor()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Tickbox\+::set\+Checked\+Fill\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia kolor elementu graficznego po wybraniu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & Kolor elementu po zmianie jego stanu na \char`\"{}prawda\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_tickbox_ae1ba0c02a5098856e9b488b57eb9cca9}} 
+\index{GUI::GUITickbox@{GUI::GUITickbox}!update@{update}}
+\index{update@{update}!GUI::GUITickbox@{GUI::GUITickbox}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Tickbox\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Odświeża stan obiektu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em e} & Zdarzenie \\
+\hline
+{\em window} & Okno główne aplikacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Reimplementowana z \textbf{ G\+U\+I\+::\+G\+U\+I\+Button} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_button_a24de43c874d0ddc970700b03f24ec233}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Tickbox.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Tickbox.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\section{Dokumentacja klasy Application}
+\label{class_application}\index{Application@{Application}}
+
+
+Klasa główna aplikacji.  
+
+
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Application} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Application} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ process\+Events} ()
+\begin{DoxyCompactList}\small\item\em Funkcja przetwarzająca zdarzenia. \end{DoxyCompactList}\item 
+void \textbf{ render} ()
+\begin{DoxyCompactList}\small\item\em Metoda zarządzająca wyświetlaniem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa główna aplikacji. 
+
+Klasa inicjalizująca wszystkie podstawowe składowe aplikacji niezbędne do jej dziłania i uruchamiania kolejnych funkcjonalności. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}} 
+\index{Application@{Application}!Application@{Application}}
+\index{Application@{Application}!Application@{Application}}
+\subsubsection{Application()}
+{\footnotesize\ttfamily Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Wywołuje metodę initialize(), ustawia odpowiedni callback dla menadżera stanów. \mbox{\label{class_application_a748bca84fefb9c12661cfaa2f623748d}} 
+\index{Application@{Application}!````~Application@{$\sim$Application}}
+\index{````~Application@{$\sim$Application}!Application@{Application}}
+\subsubsection{$\sim$Application()}
+{\footnotesize\ttfamily Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Zwalnia zasoby. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_application_a9ef46508e8c490439c67d8fb2321ced2}} 
+\index{Application@{Application}!processEvents@{processEvents}}
+\index{processEvents@{processEvents}!Application@{Application}}
+\subsubsection{processEvents()}
+{\footnotesize\ttfamily void Application\+::process\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja przetwarzająca zdarzenia. 
+
+Przetwarza zdarzenia wywoływane na rzecz aplikacji przez użytkownika, kliknięcia, ruchy myszy itd. przekazując je dalej aby każdy element mógł odpowiednio na nie zareagowac. Obsługuje pętlę główną gry. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_application_a9ac99d97ee1cc814298a2f2388bde835}} 
+\index{Application@{Application}!render@{render}}
+\index{render@{render}!Application@{Application}}
+\subsubsection{render()}
+{\footnotesize\ttfamily void Application\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zarządzająca wyświetlaniem. 
+
+Odświeża ekran gry, wymusza wyrenderowanie się na nowo obecnego stanu gry przechowywanego w menadżerze stanów. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Application.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Application.\+cpp\end{DoxyCompactItemize}

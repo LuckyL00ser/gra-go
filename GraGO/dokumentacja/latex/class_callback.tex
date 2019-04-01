@@ -1,0 +1,84 @@
+\section{Dokumentacja klasy Callback}
+\label{class_callback}\index{Callback@{Callback}}
+
+
+Abstrakcyjna klasa implementująca mechanizm callback.  
+
+
+
+
+{\ttfamily \#include $<$Callback.\+h$>$}
+
+Diagram dziedziczenia dla Callback\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.568807cm]{class_callback}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ set\+Callback} (Event\+Callback new\+Cb)
+\begin{DoxyCompactList}\small\item\em Metoda ustawia przekazaną funkcję jako callback obiektu. \end{DoxyCompactList}\item 
+\mbox{\label{class_callback_ac5a98dfe0ad07d5d0c9b94fc541184e7}} 
+virtual \textbf{ $\sim$\+Callback} ()
+\begin{DoxyCompactList}\small\item\em Wirtualny destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Callback} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Callback \textbf{ callback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Abstrakcyjna klasa implementująca mechanizm callback. 
+
+Pozwala klasom potomnym ustawić poprzez metodę \doxyref{set\+Callback()}{str.}{class_callback_acd81b358de0210ff97f452ecb2a4589c} funkcje typu void() wywoływaną w reakcji na jakieś wydarzenie w klasie potomnej. Dzięki temu ograniczamy wiedzę klas agregowanych o klasach agregujących, jednocześnie umożliwiając im komunikację. Klasa dziedziczona jest głównie przez elementy graficzne np. G\+U\+I\+Button reagujący na kliknięcie. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_callback_a8aaf6a7733d0e8d3229eb05ba972bc45}} 
+\index{Callback@{Callback}!Callback@{Callback}}
+\index{Callback@{Callback}!Callback@{Callback}}
+\subsubsection{Callback()}
+{\footnotesize\ttfamily Callback\+::\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konstruktor. 
+
+Konstruktor z modyfikatorem dostępu \char`\"{}protected\char`\"{} czyni klasę abstrakcyjną -\/ nie może ona istnieć samodzielnie. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_callback_acd81b358de0210ff97f452ecb2a4589c}} 
+\index{Callback@{Callback}!setCallback@{setCallback}}
+\index{setCallback@{setCallback}!Callback@{Callback}}
+\subsubsection{setCallback()}
+{\footnotesize\ttfamily void Callback\+::set\+Callback (\begin{DoxyParamCaption}\item[{Event\+Callback}]{new\+Cb }\end{DoxyParamCaption})}
+
+
+
+Metoda ustawia przekazaną funkcję jako callback obiektu. 
+
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{class_callback_aaebe8091c4099db434d3328f10108947}} 
+\index{Callback@{Callback}!callback@{callback}}
+\index{callback@{callback}!Callback@{Callback}}
+\subsubsection{callback}
+{\footnotesize\ttfamily Event\+Callback Callback\+::callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pole przechowujące wskazanie na callback (funkcję) 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Callback.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Callback.\+cpp\end{DoxyCompactItemize}

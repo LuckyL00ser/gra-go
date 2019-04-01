@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Dokumentacja klasy NetworkThread</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="class_network_thread-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy NetworkThread</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa obsługująca połączenia sieciowe.  
+ <a href="class_network_thread.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_network_thread_8h_source.html">NetworkThread.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla NetworkThread</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_network_thread.png" usemap="#NetworkThread_map" alt=""/>
+  <map id="NetworkThread_map" name="NetworkThread_map">
+<area href="class_callback.html" title="Abstrakcyjna klasa implementująca mechanizm callback." alt="Callback" shape="rect" coords="0,0,98,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a970f52c02f610d34d9b7d1c80b7eb477"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#a970f52c02f610d34d9b7d1c80b7eb477">NetworkThread</a> (bool <a class="el" href="class_network_thread.html#ac448c83c1555e5cd2256f8eb8c3ebf43">isServer</a>, BoardSize s=(BoardSize) 1, bool komi=false)</td></tr>
+<tr class="memdesc:a970f52c02f610d34d9b7d1c80b7eb477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="#a970f52c02f610d34d9b7d1c80b7eb477">Więcej...</a><br /></td></tr>
+<tr class="separator:a970f52c02f610d34d9b7d1c80b7eb477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaed788a9be6fbb4ed1aef9905e3e18f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#adaed788a9be6fbb4ed1aef9905e3e18f">~NetworkThread</a> ()</td></tr>
+<tr class="memdesc:adaed788a9be6fbb4ed1aef9905e3e18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <a href="#adaed788a9be6fbb4ed1aef9905e3e18f">Więcej...</a><br /></td></tr>
+<tr class="separator:adaed788a9be6fbb4ed1aef9905e3e18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac448c83c1555e5cd2256f8eb8c3ebf43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#ac448c83c1555e5cd2256f8eb8c3ebf43">isServer</a> () const</td></tr>
+<tr class="memdesc:ac448c83c1555e5cd2256f8eb8c3ebf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca informację czy aplikacja uruchomiona jest w trybie serwera.  <a href="#ac448c83c1555e5cd2256f8eb8c3ebf43">Więcej...</a><br /></td></tr>
+<tr class="separator:ac448c83c1555e5cd2256f8eb8c3ebf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d57a0a9ca68d513c6c2abf4f923366"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#a00d57a0a9ca68d513c6c2abf4f923366">getData</a> ()</td></tr>
+<tr class="memdesc:a00d57a0a9ca68d513c6c2abf4f923366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ostatnio odebrany pakiet danych z sieci.  <a href="#a00d57a0a9ca68d513c6c2abf4f923366">Więcej...</a><br /></td></tr>
+<tr class="separator:a00d57a0a9ca68d513c6c2abf4f923366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13acf7a7201b86db63f0b680da65d64b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#a13acf7a7201b86db63f0b680da65d64b">sendData</a> (sf::Packet &amp;packet)</td></tr>
+<tr class="memdesc:a13acf7a7201b86db63f0b680da65d64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wysyła dane do przeciwnego gracza.  <a href="#a13acf7a7201b86db63f0b680da65d64b">Więcej...</a><br /></td></tr>
+<tr class="separator:a13acf7a7201b86db63f0b680da65d64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d8cb53bb0d09d613f39c0658059526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#a47d8cb53bb0d09d613f39c0658059526">setReceivedCallback</a> (EventCallback cb)</td></tr>
+<tr class="memdesc:a47d8cb53bb0d09d613f39c0658059526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zmienia funkcję callback.  <a href="#a47d8cb53bb0d09d613f39c0658059526">Więcej...</a><br /></td></tr>
+<tr class="separator:a47d8cb53bb0d09d613f39c0658059526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442c3061e4f8e5013ae38022c0e62e5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#a442c3061e4f8e5013ae38022c0e62e5a">start</a> (unsigned int port, std::string ip=&quot;127.0.0.1&quot;)</td></tr>
+<tr class="memdesc:a442c3061e4f8e5013ae38022c0e62e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda inicjuje połączenie.  <a href="#a442c3061e4f8e5013ae38022c0e62e5a">Więcej...</a><br /></td></tr>
+<tr class="separator:a442c3061e4f8e5013ae38022c0e62e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00403b687698c2f3e1ed09a09bf1b41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#ad00403b687698c2f3e1ed09a09bf1b41">stop</a> ()</td></tr>
+<tr class="memdesc:ad00403b687698c2f3e1ed09a09bf1b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przerywa połączenie.  <a href="#ad00403b687698c2f3e1ed09a09bf1b41">Więcej...</a><br /></td></tr>
+<tr class="separator:ad00403b687698c2f3e1ed09a09bf1b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbd7bcdabcae675d544da6f03a61a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#a0bbd7bcdabcae675d544da6f03a61a72">loop</a> ()</td></tr>
+<tr class="memdesc:a0bbd7bcdabcae675d544da6f03a61a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda obsługująca komunikację.  <a href="#a0bbd7bcdabcae675d544da6f03a61a72">Więcej...</a><br /></td></tr>
+<tr class="separator:a0bbd7bcdabcae675d544da6f03a61a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_callback')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_callback.html">Callback</a></td></tr>
+<tr class="memitem:acd81b358de0210ff97f452ecb2a4589c inherit pub_methods_class_callback"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_callback.html#acd81b358de0210ff97f452ecb2a4589c">setCallback</a> (EventCallback newCb)</td></tr>
+<tr class="memdesc:acd81b358de0210ff97f452ecb2a4589c inherit pub_methods_class_callback"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda ustawia przekazaną funkcję jako callback obiektu.  <a href="class_callback.html#acd81b358de0210ff97f452ecb2a4589c">Więcej...</a><br /></td></tr>
+<tr class="separator:acd81b358de0210ff97f452ecb2a4589c inherit pub_methods_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a98dfe0ad07d5d0c9b94fc541184e7 inherit pub_methods_class_callback"><td class="memItemLeft" align="right" valign="top"><a id="ac5a98dfe0ad07d5d0c9b94fc541184e7"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_callback.html#ac5a98dfe0ad07d5d0c9b94fc541184e7">~Callback</a> ()</td></tr>
+<tr class="memdesc:ac5a98dfe0ad07d5d0c9b94fc541184e7 inherit pub_methods_class_callback"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wirtualny destruktor. <br /></td></tr>
+<tr class="separator:ac5a98dfe0ad07d5d0c9b94fc541184e7 inherit pub_methods_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:ab970cd7721c0a8d5189cc8d32f0c512f"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_thread.html#ab970cd7721c0a8d5189cc8d32f0c512f">mutex</a></td></tr>
+<tr class="separator:ab970cd7721c0a8d5189cc8d32f0c512f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pro_methods_class_callback"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_callback')"><img src="closed.png" alt="-"/>&#160;Metody chronione dziedziczone z <a class="el" href="class_callback.html">Callback</a></td></tr>
+<tr class="memitem:a8aaf6a7733d0e8d3229eb05ba972bc45 inherit pro_methods_class_callback"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_callback.html#a8aaf6a7733d0e8d3229eb05ba972bc45">Callback</a> ()</td></tr>
+<tr class="memdesc:a8aaf6a7733d0e8d3229eb05ba972bc45 inherit pro_methods_class_callback"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="class_callback.html#a8aaf6a7733d0e8d3229eb05ba972bc45">Więcej...</a><br /></td></tr>
+<tr class="separator:a8aaf6a7733d0e8d3229eb05ba972bc45 inherit pro_methods_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_callback"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_callback')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="class_callback.html">Callback</a></td></tr>
+<tr class="memitem:aaebe8091c4099db434d3328f10108947 inherit pro_attribs_class_callback"><td class="memItemLeft" align="right" valign="top">EventCallback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_callback.html#aaebe8091c4099db434d3328f10108947">callback</a></td></tr>
+<tr class="separator:aaebe8091c4099db434d3328f10108947 inherit pro_attribs_class_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa obsługująca połączenia sieciowe. </p>
+<p>Klasa odpowiedzialna jest za nawiązywanie i zarządzanie połączeniem sieciowym. Uruchamiana jest w osobnym wątku ze względu na wykorzystanie z blokujących gniazd sieciowych. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a970f52c02f610d34d9b7d1c80b7eb477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970f52c02f610d34d9b7d1c80b7eb477">&#9670;&nbsp;</a></span>NetworkThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetworkThread::NetworkThread </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isServer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BoardSize&#160;</td>
+          <td class="paramname"><em>s</em> = <code>(BoardSize)1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>komi</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+<p>Ustawia rodzaj (klient/serwer) i parametry połączenia. </p>
+
+</div>
+</div>
+<a id="adaed788a9be6fbb4ed1aef9905e3e18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaed788a9be6fbb4ed1aef9905e3e18f">&#9670;&nbsp;</a></span>~NetworkThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetworkThread::~NetworkThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor. </p>
+<p>Zamyka połączenie. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a00d57a0a9ca68d513c6c2abf4f923366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d57a0a9ca68d513c6c2abf4f923366">&#9670;&nbsp;</a></span>getData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NetworkThread::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda zwraca ostatnio odebrany pakiet danych z sieci. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>std::string Pakiet danych. </dd></dl>
+
+</div>
+</div>
+<a id="ac448c83c1555e5cd2256f8eb8c3ebf43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac448c83c1555e5cd2256f8eb8c3ebf43">&#9670;&nbsp;</a></span>isServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NetworkThread::isServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda zwraca informację czy aplikacja uruchomiona jest w trybie serwera. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>bool Prawda jeśli aplikacja jest serwerem rozgrywki. </dd></dl>
+
+</div>
+</div>
+<a id="a0bbd7bcdabcae675d544da6f03a61a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbd7bcdabcae675d544da6f03a61a72">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkThread::loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda obsługująca komunikację. </p>
+<p>Zawiera nieskończoną pętle która przerywana jest dopiero w momencie zerwania/zakończenia połączenia. </p><dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a13acf7a7201b86db63f0b680da65d64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13acf7a7201b86db63f0b680da65d64b">&#9670;&nbsp;</a></span>sendData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkThread::sendData </td>
+          <td>(</td>
+          <td class="paramtype">sf::Packet &amp;&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda wysyła dane do przeciwnego gracza. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>Paczka danych. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a47d8cb53bb0d09d613f39c0658059526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d8cb53bb0d09d613f39c0658059526">&#9670;&nbsp;</a></span>setReceivedCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkThread::setReceivedCallback </td>
+          <td>(</td>
+          <td class="paramtype">EventCallback&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda zmienia funkcję callback. </p>
+<p>Przekazana w argumencie funkcja wywoływana jest później jako reakcja na odebranie porcji danych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>Wskaźnik do funkcji. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a442c3061e4f8e5013ae38022c0e62e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442c3061e4f8e5013ae38022c0e62e5a">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NetworkThread::start </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>ip</em> = <code>&quot;127.0.0.1&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda inicjuje połączenie. </p>
+<p>Metoda inicjuje połączenie. Ponadto jeśli aplikacja pełni role serwera, wysyła do przeciwnika (narzuca) swoje reguły gry tzn. kolor graczy, obecnośc reguły komi, rozmiar planszy. Domyślnie łączy się z komputerem lokalnym. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>Port komunikacji sieciowej. </td></tr>
+    <tr><td class="paramname">ip</td><td>Adres IP urządzenia do którego łączy się klient. Domyślnie maszyna lokalna. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>bool Prawda jeśli udało się połączyć, fałsz w przeciwnym wypadku. </dd></dl>
+
+</div>
+</div>
+<a id="ad00403b687698c2f3e1ed09a09bf1b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00403b687698c2f3e1ed09a09bf1b41">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetworkThread::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda przerywa połączenie. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ab970cd7721c0a8d5189cc8d32f0c512f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab970cd7721c0a8d5189cc8d32f0c512f">&#9670;&nbsp;</a></span>mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex NetworkThread::mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obiekt mutex umożliwia wyłącznościowy dostęp do zasobu jakim jest pakiet przesłanych danych </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>C:/Users/Karol/source/repos/GraGO/GraGO/<a class="el" href="_network_thread_8h_source.html">NetworkThread.h</a></li>
+<li>C:/Users/Karol/source/repos/GraGO/GraGO/NetworkThread.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

@@ -1,0 +1,107 @@
+\section{Dokumentacja klasy Alert\+State}
+\label{class_alert_state}\index{AlertState@{AlertState}}
+
+
+Klasa stanu gry wyświetlającego komunikat.  
+
+
+
+
+{\ttfamily \#include $<$Alert\+State.\+h$>$}
+
+Diagram dziedziczenia dla Alert\+State\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_alert_state}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Alert\+State} (\textbf{ State\+Manager} $\ast$state, const \textbf{ Utilities} \&\textbf{ utilities}, std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\label{class_alert_state_a27bdf3d17277a4489a6e4ffce74ca89f}} 
+\textbf{ $\sim$\+Alert\+State} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Funkcja odświeżająca stan obiektu. \end{DoxyCompactList}\item 
+void \textbf{ draw} () const
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Klasa stanu gry wyświetlającego komunikat. 
+
+Stan gry wyświetlający komunikat na ekranie oraz przycisk powrotu do poprzedniego stanu na stosie stanów menadżera. Używana np. przy próbie nawiązania połączenia przez sieć by poinformować o niepowodzeniu operacji, rozłączeniu się drugiego gracza itp. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_alert_state_ab8d6f5504f290fbaf62ff1000699b1ae}} 
+\index{AlertState@{AlertState}!AlertState@{AlertState}}
+\index{AlertState@{AlertState}!AlertState@{AlertState}}
+\subsubsection{AlertState()}
+{\footnotesize\ttfamily Alert\+State\+::\+Alert\+State (\begin{DoxyParamCaption}\item[{\textbf{ State\+Manager} $\ast$}]{state,  }\item[{const \textbf{ Utilities} \&}]{utilities,  }\item[{std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em state} & Wskaźnik do menedżera stanów. \\
+\hline
+{\em utilities} & Referencja na stałą strukturę zawierającą przydatne obiekty. \\
+\hline
+{\em msg} & Zmienna zawierająca komunikat od wyświetlania. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_alert_state_aeeec6b6b4f5a604c403bc8a0ef390253}} 
+\index{AlertState@{AlertState}!draw@{draw}}
+\index{draw@{draw}!AlertState@{AlertState}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void Alert\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A constructor. 
+
+Funkcja wyrysowująca obiekt. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_aadc7c0356e6ffbda2a51e1aaad994dfb}.
+
+\mbox{\label{class_alert_state_afc08c3d0bb4c5865762ce882996ffd5f}} 
+\index{AlertState@{AlertState}!update@{update}}
+\index{update@{update}!AlertState@{AlertState}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void Alert\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja odświeżająca stan obiektu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em e} & Referencja do zdarzenia jakie mogło nastąpić. \\
+\hline
+{\em window} & Referencja do aktualnego okna renderującego widok gry. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_a2a79cd27f736ace4d63c996974773e99}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Alert\+State.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Alert\+State.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Dokumentacja klasy GUI::GUIGroup</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>GUI</b></li><li class="navelem"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html">GUIGroup</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-methods">Metody chronione</a> &#124;
+<a href="class_g_u_i_1_1_g_u_i_group-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy GUI::GUIGroup</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa umożlwia grupowanie obiektów przestrzeni nazw GUI.  
+ <a href="class_g_u_i_1_1_g_u_i_group.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_g_u_i_group_8h_source.html">GUIGroup.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla GUI::GUIGroup</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_g_u_i_1_1_g_u_i_group.png" usemap="#GUI::GUIGroup_map" alt=""/>
+  <map id="GUI::GUIGroup_map" name="GUI::GUIGroup_map">
+<area href="class_g_u_i_1_1_g_u_i_element.html" title="Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI." alt="GUI::GUIElement" shape="rect" coords="224,56,326,80"/>
+<area href="class_alert_state.html" title="Klasa stanu gry wyświetlającego komunikat." alt="AlertState" shape="rect" coords="0,168,102,192"/>
+<area href="class_game_g_u_i_view.html" title="Klasa reprezentująca widok gry." alt="GameGUIView" shape="rect" coords="112,168,214,192"/>
+<area href="class_game_over_state.html" title="Stan gry informujący o zakończonej rozgrywce." alt="GameOverState" shape="rect" coords="224,168,326,192"/>
+<area href="class_menu_state.html" title="Klasa reprezntująca menu gry." alt="MenuState" shape="rect" coords="336,168,438,192"/>
+<area href="class_settings_state.html" title="Klasa reprezentująca stan gry typu ustawienia." alt="SettingsState" shape="rect" coords="448,168,550,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a1b6fdc937a203e4b9915c225212ab2fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#a1b6fdc937a203e4b9915c225212ab2fc">GUIGroup</a> (sf::Vector2f position=sf::Vector2f(0, 0), sf::Vector2f size=sf::Vector2f(100, 100), <a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a1b6fdc937a203e4b9915c225212ab2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="#a1b6fdc937a203e4b9915c225212ab2fc">Więcej...</a><br /></td></tr>
+<tr class="separator:a1b6fdc937a203e4b9915c225212ab2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576c69ea033e52572e3cb04cb8e3300e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#a576c69ea033e52572e3cb04cb8e3300e">~GUIGroup</a> ()</td></tr>
+<tr class="memdesc:a576c69ea033e52572e3cb04cb8e3300e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <a href="#a576c69ea033e52572e3cb04cb8e3300e">Więcej...</a><br /></td></tr>
+<tr class="separator:a576c69ea033e52572e3cb04cb8e3300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63c684ef9cdd3dfd3896c3136149eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#ac63c684ef9cdd3dfd3896c3136149eac">attachChildren</a> (<a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;newChild, float xInPercent, float yInPercent, float widthInPercent, float heightInPercent)</td></tr>
+<tr class="memdesc:ac63c684ef9cdd3dfd3896c3136149eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przypisuje obiekt jak rodzica tej klasy.  <a href="#ac63c684ef9cdd3dfd3896c3136149eac">Więcej...</a><br /></td></tr>
+<tr class="separator:ac63c684ef9cdd3dfd3896c3136149eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb04143e6e08967e0e3d660b24aa5742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#aeb04143e6e08967e0e3d660b24aa5742">attachChildren</a> (<a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;newChild)</td></tr>
+<tr class="memdesc:aeb04143e6e08967e0e3d660b24aa5742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przypisuje obiekt jak rodzica tej klasy.  <a href="#aeb04143e6e08967e0e3d660b24aa5742">Więcej...</a><br /></td></tr>
+<tr class="separator:aeb04143e6e08967e0e3d660b24aa5742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4efc155843cafc6bab8d7ddc8c5078e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#af4efc155843cafc6bab8d7ddc8c5078e">detachChildren</a> (<a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;child)</td></tr>
+<tr class="memdesc:af4efc155843cafc6bab8d7ddc8c5078e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwalnia istniejący obiekt dziecko z grupy GUI.  <a href="#af4efc155843cafc6bab8d7ddc8c5078e">Więcej...</a><br /></td></tr>
+<tr class="separator:af4efc155843cafc6bab8d7ddc8c5078e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5b5a6a23b63b86e2da870a011544e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#a1d5b5a6a23b63b86e2da870a011544e8">moveChildrenOnTop</a> (<a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;child)</td></tr>
+<tr class="memdesc:a1d5b5a6a23b63b86e2da870a011544e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przesuwa obiekt-dziecko na szczyt hierarchi odświeżania/renderowania.  <a href="#a1d5b5a6a23b63b86e2da870a011544e8">Więcej...</a><br /></td></tr>
+<tr class="separator:a1d5b5a6a23b63b86e2da870a011544e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefc195568224ea28e819a1616a3c416"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#aaefc195568224ea28e819a1616a3c416">draw</a> (sf::RenderTarget &amp;target, sf::RenderStates states) const</td></tr>
+<tr class="memdesc:aaefc195568224ea28e819a1616a3c416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderuje grupę obiektów.  <a href="#aaefc195568224ea28e819a1616a3c416">Więcej...</a><br /></td></tr>
+<tr class="separator:aaefc195568224ea28e819a1616a3c416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c42ff4c7d90095b5a7f452d4e0085d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#ae6c42ff4c7d90095b5a7f452d4e0085d">update</a> (sf::Event &amp;e, sf::RenderWindow &amp;window)</td></tr>
+<tr class="memdesc:ae6c42ff4c7d90095b5a7f452d4e0085d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odświeża stan grupy obiektów.  <a href="#ae6c42ff4c7d90095b5a7f452d4e0085d">Więcej...</a><br /></td></tr>
+<tr class="separator:ae6c42ff4c7d90095b5a7f452d4e0085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_g_u_i_1_1_g_u_i_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_g_u_i_1_1_g_u_i_element')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUI::GUIElement</a></td></tr>
+<tr class="memitem:acfbb5dfb1ec6a663191bc311a3daa2b1 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#acfbb5dfb1ec6a663191bc311a3daa2b1">GUIElement</a> (sf::Vector2f position=sf::Vector2f(0, 0), <a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *parent=nullptr, bool visi=true)</td></tr>
+<tr class="memdesc:acfbb5dfb1ec6a663191bc311a3daa2b1 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="class_g_u_i_1_1_g_u_i_element.html#acfbb5dfb1ec6a663191bc311a3daa2b1">Więcej...</a><br /></td></tr>
+<tr class="separator:acfbb5dfb1ec6a663191bc311a3daa2b1 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fe7eaa743fb072ed5ba499441c35d6 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top"><a id="a98fe7eaa743fb072ed5ba499441c35d6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a98fe7eaa743fb072ed5ba499441c35d6">~GUIElement</a> ()</td></tr>
+<tr class="memdesc:a98fe7eaa743fb072ed5ba499441c35d6 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writualny destruktor. <br /></td></tr>
+<tr class="separator:a98fe7eaa743fb072ed5ba499441c35d6 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd06c15007fa48fe58890477106b781 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a1bd06c15007fa48fe58890477106b781">isVisible</a> () const</td></tr>
+<tr class="memdesc:a1bd06c15007fa48fe58890477106b781 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca informację o tym czy obiekt jest widoczny.  <a href="class_g_u_i_1_1_g_u_i_element.html#a1bd06c15007fa48fe58890477106b781">Więcej...</a><br /></td></tr>
+<tr class="separator:a1bd06c15007fa48fe58890477106b781 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f63c98cda8525644ed6bb9a0f173d07 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a2f63c98cda8525644ed6bb9a0f173d07">show</a> ()</td></tr>
+<tr class="memdesc:a2f63c98cda8525644ed6bb9a0f173d07 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zmienia stan obiektu na widoczny.  <a href="class_g_u_i_1_1_g_u_i_element.html#a2f63c98cda8525644ed6bb9a0f173d07">Więcej...</a><br /></td></tr>
+<tr class="separator:a2f63c98cda8525644ed6bb9a0f173d07 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85de58e55b5ba1601e9c0978af0e5eb3 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a85de58e55b5ba1601e9c0978af0e5eb3">hide</a> ()</td></tr>
+<tr class="memdesc:a85de58e55b5ba1601e9c0978af0e5eb3 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zmienia stan obiektu na ukryty.  <a href="class_g_u_i_1_1_g_u_i_element.html#a85de58e55b5ba1601e9c0978af0e5eb3">Więcej...</a><br /></td></tr>
+<tr class="separator:a85de58e55b5ba1601e9c0978af0e5eb3 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2425486a1a58785a89a9d6415237b186 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a2425486a1a58785a89a9d6415237b186">getParent</a> ()</td></tr>
+<tr class="memdesc:a2425486a1a58785a89a9d6415237b186 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca wskaźnik do rodzica w hierarchi GUI.  <a href="class_g_u_i_1_1_g_u_i_element.html#a2425486a1a58785a89a9d6415237b186">Więcej...</a><br /></td></tr>
+<tr class="separator:a2425486a1a58785a89a9d6415237b186 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64aaa7c4c2934b5fae89955fee5b403c inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a64aaa7c4c2934b5fae89955fee5b403c">setParent</a> (<a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *newParent)</td></tr>
+<tr class="memdesc:a64aaa7c4c2934b5fae89955fee5b403c inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rodzica w hierarchi GUI.  <a href="class_g_u_i_1_1_g_u_i_element.html#a64aaa7c4c2934b5fae89955fee5b403c">Więcej...</a><br /></td></tr>
+<tr class="separator:a64aaa7c4c2934b5fae89955fee5b403c inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fca754d725c0ff8e6ea5ef1b769c3c1 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a6fca754d725c0ff8e6ea5ef1b769c3c1">setSize</a> (sf::Vector2f s)</td></tr>
+<tr class="memdesc:a6fca754d725c0ff8e6ea5ef1b769c3c1 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rozmiar obiektu.  <a href="class_g_u_i_1_1_g_u_i_element.html#a6fca754d725c0ff8e6ea5ef1b769c3c1">Więcej...</a><br /></td></tr>
+<tr class="separator:a6fca754d725c0ff8e6ea5ef1b769c3c1 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf6bd2a8154103cf426b61c9a56b922 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a3cf6bd2a8154103cf426b61c9a56b922">setSize</a> (float width, float height)</td></tr>
+<tr class="memdesc:a3cf6bd2a8154103cf426b61c9a56b922 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rozmiar obiektu.  <a href="class_g_u_i_1_1_g_u_i_element.html#a3cf6bd2a8154103cf426b61c9a56b922">Więcej...</a><br /></td></tr>
+<tr class="separator:a3cf6bd2a8154103cf426b61c9a56b922 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5361b47a6c150156e046e94273728e41 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a5361b47a6c150156e046e94273728e41">setSize</a> (sf::Vector2u s)</td></tr>
+<tr class="memdesc:a5361b47a6c150156e046e94273728e41 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rozmiar obiektu.  <a href="class_g_u_i_1_1_g_u_i_element.html#a5361b47a6c150156e046e94273728e41">Więcej...</a><br /></td></tr>
+<tr class="separator:a5361b47a6c150156e046e94273728e41 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d53875f2d198738750dfc14693cdc38 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">virtual sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a7d53875f2d198738750dfc14693cdc38">getSize</a> () const</td></tr>
+<tr class="memdesc:a7d53875f2d198738750dfc14693cdc38 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca rozmiar elementu GUI.  <a href="class_g_u_i_1_1_g_u_i_element.html#a7d53875f2d198738750dfc14693cdc38">Więcej...</a><br /></td></tr>
+<tr class="separator:a7d53875f2d198738750dfc14693cdc38 inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91649901840a0ee8b69fa12bff2705d inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#aa91649901840a0ee8b69fa12bff2705d">getPositionRealitve</a> ()</td></tr>
+<tr class="memdesc:aa91649901840a0ee8b69fa12bff2705d inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca bezwzględne położenie obiektu.  <a href="class_g_u_i_1_1_g_u_i_element.html#aa91649901840a0ee8b69fa12bff2705d">Więcej...</a><br /></td></tr>
+<tr class="separator:aa91649901840a0ee8b69fa12bff2705d inherit pub_methods_class_g_u_i_1_1_g_u_i_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:a3822f6c4643a251470dfead34d234eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_group.html#a3822f6c4643a251470dfead34d234eb5">setSizeDerivered</a> ()</td></tr>
+<tr class="memdesc:a3822f6c4643a251470dfead34d234eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda reagująca na zmianę rozmiaru grupy obiektów <a class="el" href="class_g_u_i_1_1_g_u_i_group.html" title="Klasa umożlwia grupowanie obiektów przestrzeni nazw GUI.">GUI::GUIGroup</a>.  <a href="#a3822f6c4643a251470dfead34d234eb5">Więcej...</a><br /></td></tr>
+<tr class="separator:a3822f6c4643a251470dfead34d234eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa umożlwia grupowanie obiektów przestrzeni nazw GUI. </p>
+<p>Klasa stworzona dla wygodnej manipulacji. Może być rodzicem wielu elementów graficznych dziedziczących z <a class="el" href="class_g_u_i_1_1_g_u_i_element.html" title="Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI.">GUI::GUIElement</a>. Zarządza renderowaniem i odświeżaniem stanu swoich "dzieci". Umożliwia wygodną maniupulację jedynie swoim rozmiarem, odpowiednio dostosowując agregowane obiekty. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a1b6fdc937a203e4b9915c225212ab2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6fdc937a203e4b9915c225212ab2fc">&#9670;&nbsp;</a></span>GUIGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUI::GUIGroup::GUIGroup </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>position</em> = <code>sf::Vector2f(0,&#160;0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>size</em> = <code>sf::Vector2f(100,&#160;100)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+<p>Inicjuje podstawowe parametry klasy. </p>
+
+</div>
+</div>
+<a id="a576c69ea033e52572e3cb04cb8e3300e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576c69ea033e52572e3cb04cb8e3300e">&#9670;&nbsp;</a></span>~GUIGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUI::GUIGroup::~GUIGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destruktor. </p>
+<p>Niszczy przypisane obiekty dzieci. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="ac63c684ef9cdd3dfd3896c3136149eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63c684ef9cdd3dfd3896c3136149eac">&#9670;&nbsp;</a></span>attachChildren() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIGroup::attachChildren </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>newChild</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xInPercent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yInPercent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>widthInPercent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>heightInPercent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda przypisuje obiekt jak rodzica tej klasy. </p>
+<p>Przekazany obiekt klasy <a class="el" href="class_g_u_i_1_1_g_u_i_element.html" title="Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI.">GUIElement</a> staje się "dzieckiem" tej klasy. Zarządza ona jego wyświetlaniem, odświeżaniem oraz zwalnianiem pamięci tego obiektu. Pozostałe argumenty w % pozwalają określić i dostosować rozmiar nowego dziecka do obiektu rodzica. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newChild</td><td>Referencja do obiektu-dziecka. </td></tr>
+    <tr><td class="paramname">xInPercent</td><td>Wyrażony w % lewy margnies obiektu-dziecka od lewej krawędzi obiektu rodzica. </td></tr>
+    <tr><td class="paramname">yInPercent</td><td>Wyrażony w % górny margnies obiektu-dziecka od górnej krawędzi obiektu rodzica. </td></tr>
+    <tr><td class="paramname">widthInPercent</td><td>Wyrażona w % szerokość obiektu-dziecka względem szerokości obiektu rodzica. </td></tr>
+    <tr><td class="paramname">heightInPercent</td><td>Wyrażona w % wysokość obiektu-dziecka względem wysokości obiektu rodzica. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aeb04143e6e08967e0e3d660b24aa5742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb04143e6e08967e0e3d660b24aa5742">&#9670;&nbsp;</a></span>attachChildren() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIGroup::attachChildren </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>newChild</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda przypisuje obiekt jak rodzica tej klasy. </p>
+<p>Przekazany obiekt klasy <a class="el" href="class_g_u_i_1_1_g_u_i_element.html" title="Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI.">GUIElement</a> staje się "dzieckiem" tej klasy. Zarządza ona jego wyświetlaniem, odświeżaniem oraz zwalnianiem pamięci tego obiektu. Pozostałe argumenty w % pozwalają określić i dostosować rozmiar nowego dziecka do obiektu rodzica. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newChild</td><td>Referencja do obiektu-dziecka. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af4efc155843cafc6bab8d7ddc8c5078e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4efc155843cafc6bab8d7ddc8c5078e">&#9670;&nbsp;</a></span>detachChildren()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIGroup::detachChildren </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>child</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda zwalnia istniejący obiekt dziecko z grupy GUI. </p>
+<p>Jeśli przekazany obiekt <a class="el" href="class_g_u_i_1_1_g_u_i_element.html" title="Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI.">GUIElement</a> jest dzieckiem obiektu tej klasy to następuje jego zwolnienie - odłączenie z <a class="el" href="class_g_u_i_1_1_g_u_i_group.html" title="Klasa umożlwia grupowanie obiektów przestrzeni nazw GUI.">GUIGroup</a> któro przestaje zarządzać obiektem-dziecko. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>Referencja do zwalnianego obiektu-dziecka.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aaefc195568224ea28e819a1616a3c416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefc195568224ea28e819a1616a3c416">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIGroup::draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderTarget &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderStates&#160;</td>
+          <td class="paramname"><em>states</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renderuje grupę obiektów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Obiekt na rzecz którego element jest renderowany. </td></tr>
+    <tr><td class="paramname">states</td><td>Parametry renderowania. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+<p>Implementuje <a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a4ca6a6b66bde419fd2b1e80a4b54ccbf">GUI::GUIElement</a>.</p>
+
+<p>Reimplementowana w <a class="el" href="class_game_g_u_i_view.html#af930778af29e00bbb8da7d2e0c7cd143">GameGUIView</a>.</p>
+
+</div>
+</div>
+<a id="a1d5b5a6a23b63b86e2da870a011544e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d5b5a6a23b63b86e2da870a011544e8">&#9670;&nbsp;</a></span>moveChildrenOnTop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIGroup::moveChildrenOnTop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>child</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda przesuwa obiekt-dziecko na szczyt hierarchi odświeżania/renderowania. </p>
+<p>Obiekty podrzędne odświeżane są w kolejności odwrotnej do kolejności dodawania tj. ostani dołączony obiekt jest renderowany/odświeżany jako ostatni. Metoda ta przesuwa wybrany obiekt-dziecko na szczyt tej hierarchi. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">child</td><td>Referencja do przesuwanego obiektu-dziecka.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a3822f6c4643a251470dfead34d234eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3822f6c4643a251470dfead34d234eb5">&#9670;&nbsp;</a></span>setSizeDerivered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIGroup::setSizeDerivered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda reagująca na zmianę rozmiaru grupy obiektów <a class="el" href="class_g_u_i_1_1_g_u_i_group.html" title="Klasa umożlwia grupowanie obiektów przestrzeni nazw GUI.">GUI::GUIGroup</a>. </p>
+<p>Metoda ta dziedziczona jest z klasy <a class="el" href="class_g_u_i_1_1_g_u_i_element.html" title="Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI.">GUI::GUIElement</a> i wywoływana jest przez metodę setSize tejże klasy. Implementuje zachowanie się grupy elementów GUI po zmianie rozmiarów rodzica (obiektu opisywanej klasy). </p><dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+<p>Implementuje <a class="el" href="class_g_u_i_1_1_g_u_i_element.html#ae2143b9625dc4175dfedeb0685b02f15">GUI::GUIElement</a>.</p>
+
+</div>
+</div>
+<a id="ae6c42ff4c7d90095b5a7f452d4e0085d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c42ff4c7d90095b5a7f452d4e0085d">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIGroup::update </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odświeża stan grupy obiektów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Zdarzenie </td></tr>
+    <tr><td class="paramname">window</td><td>Okno główne aplikacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+<p>Implementuje <a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a5ca855fc851c8d575635d66fafdd3851">GUI::GUIElement</a>.</p>
+
+<p>Reimplementowana w <a class="el" href="class_game_g_u_i_view.html#a4990a39e751f85d8f25ae30b33fae5bb">GameGUIView</a>, <a class="el" href="class_settings_state.html#a19a7c04911e40ed23f29c9839c164ed2">SettingsState</a>, <a class="el" href="class_menu_state.html#aab9ffa133893dd7c4d6756a6b3ca9c8b">MenuState</a>, <a class="el" href="class_alert_state.html#afc08c3d0bb4c5865762ce882996ffd5f">AlertState</a> i <a class="el" href="class_game_over_state.html#a57290f9ae82b16d416d6252a613c62f3">GameOverState</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>C:/Users/Karol/source/repos/GraGO/GraGO/<a class="el" href="_g_u_i_group_8h_source.html">GUIGroup.h</a></li>
+<li>C:/Users/Karol/source/repos/GraGO/GraGO/GUIGroup.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

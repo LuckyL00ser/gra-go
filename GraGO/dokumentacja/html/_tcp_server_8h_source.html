@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Plik źródłowy C:/Users/Karol/source/repos/GraGO/GraGO/TcpServer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/Users/Karol/source/repos/GraGO/GraGO/TcpServer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;SFML\Network.hpp&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;TcpClient.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_tcp_server.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tcp_server.html">TcpServer</a>: <span class="keyword">public</span> <a class="code" href="class_tcp_client.html">TcpClient</a></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    sf::TcpListener listener; <span class="comment">//tylko jedno polaczenie</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">bool</span> serverIsBlackPlayer;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_tcp_server.html#abc977059ef61f1c42f5fda1bc5945ab0">TcpServer</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_tcp_server.html#ae7438ef5a09dcbdd7d236e4f8c13b340">   25</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tcp_server.html#ae7438ef5a09dcbdd7d236e4f8c13b340">getifServerIsBlack</a>()<span class="keyword">const </span>{ <span class="keywordflow">return</span> serverIsBlackPlayer; }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tcp_server.html#a4217b97aa189a94dc91eba3d624eb913">start</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, sf::IpAddress ip=<span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tcp_server.html#a25718832405741fcd56d4b140aa0898c">loop</a>();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tcp_server.html#a381133b5eeab2859cfb683baeec29705">closeConnection</a>();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_tcp_server.html#a728a9e31c53cf86887f1f6149b1c46dd">~TcpServer</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="ttc" id="class_tcp_server_html_a4217b97aa189a94dc91eba3d624eb913"><div class="ttname"><a href="class_tcp_server.html#a4217b97aa189a94dc91eba3d624eb913">TcpServer::start</a></div><div class="ttdeci">bool start(unsigned int port, sf::IpAddress ip=&quot;127.0.0.1&quot;)</div><div class="ttdoc">Metoda inicjuje połączenie.</div><div class="ttdef"><b>Definition:</b> TcpServer.cpp:11</div></div>
+<div class="ttc" id="class_tcp_client_html"><div class="ttname"><a href="class_tcp_client.html">TcpClient</a></div><div class="ttdoc">Klasa reprezentuje klienta dla połączenia sieciowego typu TCP.</div><div class="ttdef"><b>Definition:</b> TcpClient.h:12</div></div>
+<div class="ttc" id="class_tcp_server_html_a728a9e31c53cf86887f1f6149b1c46dd"><div class="ttname"><a href="class_tcp_server.html#a728a9e31c53cf86887f1f6149b1c46dd">TcpServer::~TcpServer</a></div><div class="ttdeci">~TcpServer()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> TcpServer.cpp:60</div></div>
+<div class="ttc" id="class_tcp_server_html_ae7438ef5a09dcbdd7d236e4f8c13b340"><div class="ttname"><a href="class_tcp_server.html#ae7438ef5a09dcbdd7d236e4f8c13b340">TcpServer::getifServerIsBlack</a></div><div class="ttdeci">bool getifServerIsBlack() const</div><div class="ttdoc">Metoda informująca o kolorze gracza który jest serwerem.</div><div class="ttdef"><b>Definition:</b> TcpServer.h:25</div></div>
+<div class="ttc" id="class_tcp_server_html_a381133b5eeab2859cfb683baeec29705"><div class="ttname"><a href="class_tcp_server.html#a381133b5eeab2859cfb683baeec29705">TcpServer::closeConnection</a></div><div class="ttdeci">void closeConnection()</div><div class="ttdoc">Metoda zamykająca połączenie TCP.</div><div class="ttdef"><b>Definition:</b> TcpServer.cpp:51</div></div>
+<div class="ttc" id="class_tcp_server_html"><div class="ttname"><a href="class_tcp_server.html">TcpServer</a></div><div class="ttdoc">Klasa reprezentuje serwer dla połączenia sieciowego typu TCP.</div><div class="ttdef"><b>Definition:</b> TcpServer.h:11</div></div>
+<div class="ttc" id="class_tcp_server_html_a25718832405741fcd56d4b140aa0898c"><div class="ttname"><a href="class_tcp_server.html#a25718832405741fcd56d4b140aa0898c">TcpServer::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Metoda odpowiadająca za komunikację.</div><div class="ttdef"><b>Definition:</b> TcpServer.cpp:41</div></div>
+<div class="ttc" id="class_tcp_server_html_abc977059ef61f1c42f5fda1bc5945ab0"><div class="ttname"><a href="class_tcp_server.html#abc977059ef61f1c42f5fda1bc5945ab0">TcpServer::TcpServer</a></div><div class="ttdeci">TcpServer()</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> TcpServer.cpp:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

@@ -1,0 +1,107 @@
+\section{Dokumentacja klasy Menu\+State}
+\label{class_menu_state}\index{MenuState@{MenuState}}
+
+
+Klasa reprezntująca menu gry.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+State.\+h$>$}
+
+Diagram dziedziczenia dla Menu\+State\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_menu_state}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Menu\+State} (\textbf{ State\+Manager} $\ast$state, const \textbf{ Utilities} \&\textbf{ utilities})
+\begin{DoxyCompactList}\small\item\em Konstrutor. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Menu\+State} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadająca za odświeżanie stanu gry oraz agregowanych obiektów graficznych. \end{DoxyCompactList}\item 
+void \textbf{ draw} () const
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadająca za renderowanie stanu gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezntująca menu gry. 
+
+Klasa będąca menu gry jest jednocześnie jednym ze stanów gry (dziedziczy z \doxyref{Base\+State}{str.}{class_base_state}). Jest pierwszym stanem jaki wrzucany jest do menadżera stanów po uruchomieniu aplikacji i jednoczesnie ostatnim zdejmowanym ze stostu stanem. Dziedziczy również z G\+U\+I\+Group by umożliwić sprawną manipulację elementami graficznymi menu. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_menu_state_a135191a6362eca1875ca8923ba57dd4d}} 
+\index{MenuState@{MenuState}!MenuState@{MenuState}}
+\index{MenuState@{MenuState}!MenuState@{MenuState}}
+\subsubsection{MenuState()}
+{\footnotesize\ttfamily Menu\+State\+::\+Menu\+State (\begin{DoxyParamCaption}\item[{\textbf{ State\+Manager} $\ast$}]{state,  }\item[{const \textbf{ Utilities} \&}]{utilities }\end{DoxyParamCaption})}
+
+
+
+Konstrutor. 
+
+Inicjuje niezbędne pola wymagane przez klasę bazową \doxyref{Base\+State}{str.}{class_base_state} przekazując argumenty do konstruktora klasy bazowej. Wywołuje metodę create\+G\+U\+I() tworząca interfejs graficzny menu. \mbox{\label{class_menu_state_a58aea91a44436c5bba575c5de755a5bc}} 
+\index{MenuState@{MenuState}!````~MenuState@{$\sim$MenuState}}
+\index{````~MenuState@{$\sim$MenuState}!MenuState@{MenuState}}
+\subsubsection{$\sim$MenuState()}
+{\footnotesize\ttfamily Menu\+State\+::$\sim$\+Menu\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Zwalnia pamięć. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_menu_state_a39ca0a4858bb809b10507b3fc2e32f33}} 
+\index{MenuState@{MenuState}!draw@{draw}}
+\index{draw@{draw}!MenuState@{MenuState}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void Menu\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda odpowiadająca za renderowanie stanu gry. 
+
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_aadc7c0356e6ffbda2a51e1aaad994dfb}.
+
+\mbox{\label{class_menu_state_aab9ffa133893dd7c4d6756a6b3ca9c8b}} 
+\index{MenuState@{MenuState}!update@{update}}
+\index{update@{update}!MenuState@{MenuState}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void Menu\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda odpowiadająca za odświeżanie stanu gry oraz agregowanych obiektów graficznych. 
+
+Za odświeżanie \char`\"{}dzieci\char`\"{} menu odpowiedzialna jest funkcja update klasy potomnej G\+U\+I\+Group. 
+\begin{DoxyParams}{Parametry}
+{\em e} & Referencja do zdarzenia jakie wystapiło. \\
+\hline
+{\em window} & Referencja do okna aplikacji w którym należy wyrysować obiekt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_a2a79cd27f736ace4d63c996974773e99}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Menu\+State.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Menu\+State.\+cpp\end{DoxyCompactItemize}

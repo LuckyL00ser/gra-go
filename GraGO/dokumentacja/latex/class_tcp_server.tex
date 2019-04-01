@@ -1,0 +1,132 @@
+\section{Dokumentacja klasy Tcp\+Server}
+\label{class_tcp_server}\index{TcpServer@{TcpServer}}
+
+
+Klasa reprezentuje serwer dla połączenia sieciowego typu T\+CP.  
+
+
+
+
+{\ttfamily \#include $<$Tcp\+Server.\+h$>$}
+
+Diagram dziedziczenia dla Tcp\+Server\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_tcp_server}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_tcp_server_abc977059ef61f1c42f5fda1bc5945ab0}} 
+\textbf{ Tcp\+Server} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+bool \textbf{ getif\+Server\+Is\+Black} () const
+\begin{DoxyCompactList}\small\item\em Metoda informująca o kolorze gracza który jest serwerem. \end{DoxyCompactList}\item 
+bool \textbf{ start} (unsigned int port, sf\+::\+Ip\+Address ip=\char`\"{}127.\+0.\+0.\+1\char`\"{})
+\begin{DoxyCompactList}\small\item\em Metoda inicjuje połączenie. \end{DoxyCompactList}\item 
+void \textbf{ loop} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadająca za komunikację. \end{DoxyCompactList}\item 
+void \textbf{ close\+Connection} ()
+\begin{DoxyCompactList}\small\item\em Metoda zamykająca połączenie T\+CP. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Tcp\+Server} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentuje serwer dla połączenia sieciowego typu T\+CP. 
+
+Obiekt tej klasy zarządza obiektem klasy Tcp\+Listener inicjując nasłuchwanie na protokole T\+CP i tym samym hosting gry. Sama komunikacja identyczna jest jak dla obiektu klasy Tcp\+Socket stąd klasa ta dziedziczy z klasy bazowe \doxyref{Tcp\+Client}{str.}{class_tcp_client}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_tcp_server_a728a9e31c53cf86887f1f6149b1c46dd}} 
+\index{TcpServer@{TcpServer}!````~TcpServer@{$\sim$TcpServer}}
+\index{````~TcpServer@{$\sim$TcpServer}!TcpServer@{TcpServer}}
+\subsubsection{$\sim$TcpServer()}
+{\footnotesize\ttfamily Tcp\+Server\+::$\sim$\+Tcp\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Kończy oczekiwanie na połączenie. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_tcp_server_a381133b5eeab2859cfb683baeec29705}} 
+\index{TcpServer@{TcpServer}!closeConnection@{closeConnection}}
+\index{closeConnection@{closeConnection}!TcpServer@{TcpServer}}
+\subsubsection{closeConnection()}
+{\footnotesize\ttfamily void Tcp\+Server\+::close\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda zamykająca połączenie T\+CP. 
+
+Wywołuje metodę \doxyref{close\+Connection()}{str.}{class_tcp_server_a381133b5eeab2859cfb683baeec29705} z klasy bazowej \doxyref{Tcp\+Client}{str.}{class_tcp_client} i ewentualnie zamyka obiekt nasłuchiwania jeśli nie ustanowiono połączenia. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Reimplementowana z \textbf{ Tcp\+Client} \doxyref{}{str.}{class_tcp_client_a88d7419b2e07ebdbb4de21dfa5defb15}.
+
+\mbox{\label{class_tcp_server_ae7438ef5a09dcbdd7d236e4f8c13b340}} 
+\index{TcpServer@{TcpServer}!getifServerIsBlack@{getifServerIsBlack}}
+\index{getifServerIsBlack@{getifServerIsBlack}!TcpServer@{TcpServer}}
+\subsubsection{getifServerIsBlack()}
+{\footnotesize\ttfamily bool Tcp\+Server\+::getif\+Server\+Is\+Black (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda informująca o kolorze gracza który jest serwerem. 
+
+\begin{DoxyReturn}{Zwraca}
+bool Zwraca prawdę jeśli gracz hostujący grę jest graczem czarnym. 
+\end{DoxyReturn}
+\mbox{\label{class_tcp_server_a25718832405741fcd56d4b140aa0898c}} 
+\index{TcpServer@{TcpServer}!loop@{loop}}
+\index{loop@{loop}!TcpServer@{TcpServer}}
+\subsubsection{loop()}
+{\footnotesize\ttfamily void Tcp\+Server\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda odpowiadająca za komunikację. 
+
+Wewnątrz tej metody znajduje się wywołanie metody loop z klasy bazowej \doxyref{Tcp\+Client}{str.}{class_tcp_client}. Komunikacja dla serwra jest identyczna jak dla klienta. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Reimplementowana z \textbf{ Tcp\+Client} \doxyref{}{str.}{class_tcp_client_ac32f552518b67ab50f88fd827d2d5eb9}.
+
+\mbox{\label{class_tcp_server_a4217b97aa189a94dc91eba3d624eb913}} 
+\index{TcpServer@{TcpServer}!start@{start}}
+\index{start@{start}!TcpServer@{TcpServer}}
+\subsubsection{start()}
+{\footnotesize\ttfamily bool Tcp\+Server\+::start (\begin{DoxyParamCaption}\item[{unsigned int}]{port,  }\item[{sf\+::\+Ip\+Address}]{ip = {\ttfamily \char`\"{}127.0.0.1\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda inicjuje połączenie. 
+
+Jest to klasa serwera zatem połączenie rozpoczyna się od nasłuchiwania na przychodzące połączenie ze strony innego gracza będącego klientem. Operacja nasłuchiwania jest blokująca, czeka na przyjście połączenia zatem sugeruje się wywoływanie tej funkcji w osobnym wątku. Metoda losuje gracza który rozpocznie rozgrywkę i po nawiązaniu połączenia informuje o tym instancje gry obydwu graczy. 
+\begin{DoxyParams}{Parametry}
+{\em port} & Port na którym ustanawiamy serwer. \\
+\hline
+{\em ip} & Dla serwera parametr ten jest bez znaczenia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+bool Zwraca prawdę jeśli ustanowienie połączenia powiodło się. 
+\end{DoxyReturn}
+
+
+Reimplementowana z \textbf{ Tcp\+Client} \doxyref{}{str.}{class_tcp_client_af57760f09a99f0e4c73b8d342cb5f3d6}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Tcp\+Server.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Tcp\+Server.\+cpp\end{DoxyCompactItemize}

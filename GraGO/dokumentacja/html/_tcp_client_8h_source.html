@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Plik źródłowy C:/Users/Karol/source/repos/GraGO/GraGO/TcpClient.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/Users/Karol/source/repos/GraGO/GraGO/TcpClient.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;SFML\Network.hpp&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Callback.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_network_thread.html">NetworkThread</a>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_tcp_client.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tcp_client.html">TcpClient</a>: <span class="keyword">public</span> <a class="code" href="class_callback.html">Callback</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> connect(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, sf::IpAddress ip = <span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_network_thread.html">NetworkThread</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_tcp_client.html#a4a1fa7ad3f4c5e3b4d05757bd8ddd0bd">   20</a></span>&#160;    sf::TcpSocket <a class="code" href="class_tcp_client.html#a4a1fa7ad3f4c5e3b4d05757bd8ddd0bd">socket</a>; </div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_tcp_client.html#a8a9c6771fd94ab20250e21791bd9eaad">   21</a></span>&#160;    std::string <a class="code" href="class_tcp_client.html#a8a9c6771fd94ab20250e21791bd9eaad">message</a>; </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_tcp_client.html#ad2e6b99a63964caa825c44e93ff8e777">TcpClient</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tcp_client.html#a125d2277f401cbdebadb9689a5933e18">~TcpClient</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_tcp_client.html#af57760f09a99f0e4c73b8d342cb5f3d6">start</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, sf::IpAddress ip = <span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_tcp_client.html#ac32f552518b67ab50f88fd827d2d5eb9">loop</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_tcp_client.html#a985c14baa42266f2926dcddd06172b0d">   54</a></span>&#160;    std::string <a class="code" href="class_tcp_client.html#a985c14baa42266f2926dcddd06172b0d">getLastMessage</a>()<span class="keyword">const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_tcp_client.html#a8a9c6771fd94ab20250e21791bd9eaad">message</a>; }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    sf::Socket::Status <a class="code" href="class_tcp_client.html#a6711cc30cf1cde6749a126de9a967d0c">sendData</a>(sf::Packet&amp; packet);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tcp_client.html#a3b53176fb30019a3e7a195332f518c02">receiveData</a>();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_tcp_client.html#a88d7419b2e07ebdbb4de21dfa5defb15">closeConnection</a>();</div><div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_tcp_client.html#aaa9d186b1304824369115b18044f178e">   76</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tcp_client.html#aaa9d186b1304824369115b18044f178e">close</a>; </div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="ttc" id="class_tcp_client_html_a125d2277f401cbdebadb9689a5933e18"><div class="ttname"><a href="class_tcp_client.html#a125d2277f401cbdebadb9689a5933e18">TcpClient::~TcpClient</a></div><div class="ttdeci">virtual ~TcpClient()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> TcpClient.cpp:66</div></div>
+<div class="ttc" id="class_network_thread_html"><div class="ttname"><a href="class_network_thread.html">NetworkThread</a></div><div class="ttdoc">Klasa obsługująca połączenia sieciowe.</div><div class="ttdef"><b>Definition:</b> NetworkThread.h:14</div></div>
+<div class="ttc" id="class_tcp_client_html"><div class="ttname"><a href="class_tcp_client.html">TcpClient</a></div><div class="ttdoc">Klasa reprezentuje klienta dla połączenia sieciowego typu TCP.</div><div class="ttdef"><b>Definition:</b> TcpClient.h:12</div></div>
+<div class="ttc" id="class_tcp_client_html_ac32f552518b67ab50f88fd827d2d5eb9"><div class="ttname"><a href="class_tcp_client.html#ac32f552518b67ab50f88fd827d2d5eb9">TcpClient::loop</a></div><div class="ttdeci">virtual void loop()</div><div class="ttdoc">Metoda oczekuje na odbiór danych.</div><div class="ttdef"><b>Definition:</b> TcpClient.cpp:51</div></div>
+<div class="ttc" id="class_tcp_client_html_a88d7419b2e07ebdbb4de21dfa5defb15"><div class="ttname"><a href="class_tcp_client.html#a88d7419b2e07ebdbb4de21dfa5defb15">TcpClient::closeConnection</a></div><div class="ttdeci">virtual void closeConnection()</div><div class="ttdoc">Metoda zamyka połączenie TCP.</div><div class="ttdef"><b>Definition:</b> TcpClient.cpp:59</div></div>
+<div class="ttc" id="class_callback_html"><div class="ttname"><a href="class_callback.html">Callback</a></div><div class="ttdoc">Abstrakcyjna klasa implementująca mechanizm callback.</div><div class="ttdef"><b>Definition:</b> Callback.h:10</div></div>
+<div class="ttc" id="class_tcp_client_html_aaa9d186b1304824369115b18044f178e"><div class="ttname"><a href="class_tcp_client.html#aaa9d186b1304824369115b18044f178e">TcpClient::close</a></div><div class="ttdeci">bool close</div><div class="ttdef"><b>Definition:</b> TcpClient.h:76</div></div>
+<div class="ttc" id="class_tcp_client_html_af57760f09a99f0e4c73b8d342cb5f3d6"><div class="ttname"><a href="class_tcp_client.html#af57760f09a99f0e4c73b8d342cb5f3d6">TcpClient::start</a></div><div class="ttdeci">virtual bool start(unsigned int port, sf::IpAddress ip=&quot;127.0.0.1&quot;)</div><div class="ttdoc">Metoda inicjuje połączenie TCP do serwra.</div><div class="ttdef"><b>Definition:</b> TcpClient.cpp:10</div></div>
+<div class="ttc" id="class_tcp_client_html_ad2e6b99a63964caa825c44e93ff8e777"><div class="ttname"><a href="class_tcp_client.html#ad2e6b99a63964caa825c44e93ff8e777">TcpClient::TcpClient</a></div><div class="ttdeci">TcpClient()</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> TcpClient.cpp:5</div></div>
+<div class="ttc" id="class_tcp_client_html_a4a1fa7ad3f4c5e3b4d05757bd8ddd0bd"><div class="ttname"><a href="class_tcp_client.html#a4a1fa7ad3f4c5e3b4d05757bd8ddd0bd">TcpClient::socket</a></div><div class="ttdeci">sf::TcpSocket socket</div><div class="ttdef"><b>Definition:</b> TcpClient.h:20</div></div>
+<div class="ttc" id="class_tcp_client_html_a6711cc30cf1cde6749a126de9a967d0c"><div class="ttname"><a href="class_tcp_client.html#a6711cc30cf1cde6749a126de9a967d0c">TcpClient::sendData</a></div><div class="ttdeci">sf::Socket::Status sendData(sf::Packet &amp;packet)</div><div class="ttdoc">Metoda wysyła pakiet danych do drugiego gracza.</div><div class="ttdef"><b>Definition:</b> TcpClient.cpp:27</div></div>
+<div class="ttc" id="class_tcp_client_html_a8a9c6771fd94ab20250e21791bd9eaad"><div class="ttname"><a href="class_tcp_client.html#a8a9c6771fd94ab20250e21791bd9eaad">TcpClient::message</a></div><div class="ttdeci">std::string message</div><div class="ttdef"><b>Definition:</b> TcpClient.h:21</div></div>
+<div class="ttc" id="class_tcp_client_html_a985c14baa42266f2926dcddd06172b0d"><div class="ttname"><a href="class_tcp_client.html#a985c14baa42266f2926dcddd06172b0d">TcpClient::getLastMessage</a></div><div class="ttdeci">std::string getLastMessage() const</div><div class="ttdoc">Metoda zwraca ostatni odebrany pakiet danych.</div><div class="ttdef"><b>Definition:</b> TcpClient.h:54</div></div>
+<div class="ttc" id="class_tcp_client_html_a3b53176fb30019a3e7a195332f518c02"><div class="ttname"><a href="class_tcp_client.html#a3b53176fb30019a3e7a195332f518c02">TcpClient::receiveData</a></div><div class="ttdeci">void receiveData()</div><div class="ttdoc">Metoda oczekuje na odbiór danych.</div><div class="ttdef"><b>Definition:</b> TcpClient.cpp:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

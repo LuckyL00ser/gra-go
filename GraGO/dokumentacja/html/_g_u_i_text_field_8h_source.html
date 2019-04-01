@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Plik źródłowy C:/Users/Karol/source/repos/GraGO/GraGO/GUITextField.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/Users/Karol/source/repos/GraGO/GraGO/GUITextField.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;GUIElement.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;SFML\Graphics\Text.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;SFML\Graphics\RectangleShape.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>GUI {</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_g_u_i_1_1_g_u_i_text_field.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html">GUITextField</a> :</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        sf::Text text;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        sf::RectangleShape borders;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">const</span> sf::Color hasFocus = sf::Color(200, 50, 50,100);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">const</span> sf::Color noFocus = sf::Color::White;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#a4c5741e31981bc0f9a877ce4af90f4bc">setSizeDerivered</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#a9e9d97b079b664abd52acf6e662f4e16">formatText</a>();</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_g_u_i_1_1_g_u_i_text_field.html#aa14774b959793ec383f3dc9a85e3a3ae">   36</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#aa14774b959793ec383f3dc9a85e3a3ae">focus</a>; </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#a9f7fda1abeb7b9b2992fa3d3d6a90541">GUITextField</a>(sf::Vector2f position = sf::Vector2f(0, 0), sf::Vector2f buttonSize = sf::Vector2f(50, 20),</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            sf::Font* font = <span class="keyword">nullptr</span>, std::string text = <span class="stringliteral">&quot; &quot;</span>, <a class="code" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a>* parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#aa016d557aac2ece2e073ba352fe0f35a">~GUITextField</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#a638107ab718497338df05064bb35bbdf">draw</a>(sf::RenderTarget&amp; target, sf::RenderStates states)<span class="keyword">const</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#a23fc31e8a2c93976e5dcd58bd0a3c1ff">update</a>(sf::Event&amp; e, sf::RenderWindow&amp; window);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#a5d755d73a59103134a0f7eea105f524f">setText</a>(<span class="keyword">const</span> std::string&amp; text);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#ac89506ea93f91ccebe14d97a0a2ba0ac">setTextSize</a>(<span class="keywordtype">unsigned</span> size);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#a3e653cfa85e17da56be68c266ea6c12e">setFont</a>(<span class="keyword">const</span> sf::Font&amp; newFont);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        </div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        std::string <a class="code" href="class_g_u_i_1_1_g_u_i_text_field.html#ab7186c645c76cff7f3bc753fc17d3efe">getText</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    };</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div><div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_a9f7fda1abeb7b9b2992fa3d3d6a90541"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#a9f7fda1abeb7b9b2992fa3d3d6a90541">GUI::GUITextField::GUITextField</a></div><div class="ttdeci">GUITextField(sf::Vector2f position=sf::Vector2f(0, 0), sf::Vector2f buttonSize=sf::Vector2f(50, 20), sf::Font *font=nullptr, std::string text=&quot; &quot;, GUIElement *parent=nullptr)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:5</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_a23fc31e8a2c93976e5dcd58bd0a3c1ff"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#a23fc31e8a2c93976e5dcd58bd0a3c1ff">GUI::GUITextField::update</a></div><div class="ttdeci">virtual void update(sf::Event &amp;e, sf::RenderWindow &amp;window)</div><div class="ttdoc">Odświeża stan obiektu.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:42</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_a4c5741e31981bc0f9a877ce4af90f4bc"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#a4c5741e31981bc0f9a877ce4af90f4bc">GUI::GUITextField::setSizeDerivered</a></div><div class="ttdeci">virtual void setSizeDerivered()</div><div class="ttdoc">Metoda reagująca na zmianę rozmiaru pola tekstowego.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:17</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_aa016d557aac2ece2e073ba352fe0f35a"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#aa016d557aac2ece2e073ba352fe0f35a">GUI::GUITextField::~GUITextField</a></div><div class="ttdeci">virtual ~GUITextField()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:31</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_element_html"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_element.html">GUI::GUIElement</a></div><div class="ttdoc">Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI.</div><div class="ttdef"><b>Definition:</b> GUIElement.h:21</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_a638107ab718497338df05064bb35bbdf"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#a638107ab718497338df05064bb35bbdf">GUI::GUITextField::draw</a></div><div class="ttdeci">virtual void draw(sf::RenderTarget &amp;target, sf::RenderStates states) const</div><div class="ttdoc">Renderuje pole tekstowe.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:35</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_a3e653cfa85e17da56be68c266ea6c12e"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#a3e653cfa85e17da56be68c266ea6c12e">GUI::GUITextField::setFont</a></div><div class="ttdeci">void setFont(const sf::Font &amp;newFont)</div><div class="ttdoc">Metoda zmienia czcionkę etykiety.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:88</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_a9e9d97b079b664abd52acf6e662f4e16"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#a9e9d97b079b664abd52acf6e662f4e16">GUI::GUITextField::formatText</a></div><div class="ttdeci">void formatText()</div><div class="ttdoc">Metoda pozycjonuje tekst w polu tekstowym.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:23</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_a5d755d73a59103134a0f7eea105f524f"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#a5d755d73a59103134a0f7eea105f524f">GUI::GUITextField::setText</a></div><div class="ttdeci">void setText(const std::string &amp;text)</div><div class="ttdoc">Metoda zmienia tekst wyświetlany w polu tekstowym.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:76</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_ac89506ea93f91ccebe14d97a0a2ba0ac"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#ac89506ea93f91ccebe14d97a0a2ba0ac">GUI::GUITextField::setTextSize</a></div><div class="ttdeci">void setTextSize(unsigned size)</div><div class="ttdoc">Metoda zmienia rozmiar tekstu etykiety.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:82</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_aa14774b959793ec383f3dc9a85e3a3ae"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#aa14774b959793ec383f3dc9a85e3a3ae">GUI::GUITextField::focus</a></div><div class="ttdeci">bool focus</div><div class="ttdef"><b>Definition:</b> GUITextField.h:36</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html_ab7186c645c76cff7f3bc753fc17d3efe"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html#ab7186c645c76cff7f3bc753fc17d3efe">GUI::GUITextField::getText</a></div><div class="ttdeci">std::string getText() const</div><div class="ttdoc">Metoda zwraca tekst wpisany w polu tekstowym.</div><div class="ttdef"><b>Definition:</b> GUITextField.cpp:94</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_text_field_html"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_text_field.html">GUI::GUITextField</a></div><div class="ttdoc">Klasa reprezentuje elementy GUI typu pole tekstowe.</div><div class="ttdef"><b>Definition:</b> GUITextField.h:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

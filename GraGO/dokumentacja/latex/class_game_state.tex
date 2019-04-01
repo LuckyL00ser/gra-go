@@ -1,0 +1,157 @@
+\section{Dokumentacja klasy Game\+State}
+\label{class_game_state}\index{GameState@{GameState}}
+
+
+Klasa reprezentująca stan aplikacji typu gra.  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+h$>$}
+
+Diagram dziedziczenia dla Game\+State\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_state}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Game\+State} (\textbf{ State\+Manager} $\ast$state, const \textbf{ Utilities} \&\textbf{ utilities})
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+virtual \textbf{ $\sim$\+Game\+State} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+virtual void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Odświeża stan obiektu, reaguje na zdarzenia. \end{DoxyCompactList}\item 
+virtual void \textbf{ draw} () const
+\begin{DoxyCompactList}\small\item\em Renderuje stan gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \textbf{ end\+Game} ()
+\begin{DoxyCompactList}\small\item\em Metoda wywoływana gdy gra zostaje zakończona. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Game} \textbf{ game}
+\item 
+\textbf{ Game\+G\+U\+I\+View} \textbf{ game\+View}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentująca stan aplikacji typu gra. 
+
+Dziedziczy z klasy \doxyref{Base\+State}{str.}{class_base_state}. Łączy logikę gry z warstwą prezentacji (wyłącznie dla stanu rozgrywki), agregując obiekty klas \doxyref{Game}{str.}{class_game} oraz \doxyref{Game\+G\+U\+I\+View}{str.}{class_game_g_u_i_view}. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_game_state_a50816567a6239a6edb6a08eec54da5e7}} 
+\index{GameState@{GameState}!GameState@{GameState}}
+\index{GameState@{GameState}!GameState@{GameState}}
+\subsubsection{GameState()}
+{\footnotesize\ttfamily Game\+State\+::\+Game\+State (\begin{DoxyParamCaption}\item[{\textbf{ State\+Manager} $\ast$}]{state,  }\item[{const \textbf{ Utilities} \&}]{utilities }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Wywołuje jawnie konstruktor klasy bazowej \doxyref{Base\+State}{str.}{class_base_state}. Inicjluje ustawienia gry pobieranie z ustawień. Ustawia reakcję na zakończenie rozgrywki wywoływane przez agregowany obiekt klasy \doxyref{Game\+G\+U\+I\+View}{str.}{class_game_g_u_i_view}. \mbox{\label{class_game_state_ae623df5042cd0c17daa3394fdcb397b3}} 
+\index{GameState@{GameState}!````~GameState@{$\sim$GameState}}
+\index{````~GameState@{$\sim$GameState}!GameState@{GameState}}
+\subsubsection{$\sim$GameState()}
+{\footnotesize\ttfamily Game\+State\+::$\sim$\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destruktor. 
+
+Wirtualny destruktor. Przystosowuje klasę do dziedziczenia. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_game_state_a9e91078624a59e51ed3fca1361933d99}} 
+\index{GameState@{GameState}!draw@{draw}}
+\index{draw@{draw}!GameState@{GameState}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void Game\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renderuje stan gry. 
+
+Renderuje agregowany obiekt game\+View. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_aadc7c0356e6ffbda2a51e1aaad994dfb}.
+
+
+
+Reimplementowana w \textbf{ Game\+State\+Network} \doxyref{}{str.}{class_game_state_network_a317d2f89b4ff7eae365d50fc72cebf50}.
+
+\mbox{\label{class_game_state_a0f46eb5be452693b0dc945a7c5cd0c9a}} 
+\index{GameState@{GameState}!endGame@{endGame}}
+\index{endGame@{endGame}!GameState@{GameState}}
+\subsubsection{endGame()}
+{\footnotesize\ttfamily void Game\+State\+::end\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Metoda wywoływana gdy gra zostaje zakończona. 
+
+Metoda wstawia na stos menadżera stanów gry, nowy stan wyświetlający informację o zakończeniu rozgrywki i dający graczowi możliwość podjęcia decyzji czy chce zagrać jeszcze raz czy też powrócić do menu. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_game_state_a41f5e25772762e990b289d17d6c005d3}} 
+\index{GameState@{GameState}!update@{update}}
+\index{update@{update}!GameState@{GameState}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void Game\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Odświeża stan obiektu, reaguje na zdarzenia. 
+
+Odświezą ten stan gry i elementy potomne. Wykrywa wciśnięcie klawisza odpowiadającego za pass (\char`\"{}\+P\char`\"{}). 
+\begin{DoxyParams}{Parametry}
+{\em e} & Zdarzenie \\
+\hline
+{\em window} & Okno głowne aplikacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_a2a79cd27f736ace4d63c996974773e99}.
+
+
+
+Reimplementowana w \textbf{ Game\+State\+Network} \doxyref{}{str.}{class_game_state_network_a16dd9c3357c5f9220480f0b031947da8}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{class_game_state_ab2c9431726b99b91ceae9494d9cccdd1}} 
+\index{GameState@{GameState}!game@{game}}
+\index{game@{game}!GameState@{GameState}}
+\subsubsection{game}
+{\footnotesize\ttfamily \textbf{ Game} Game\+State\+::game\hspace{0.3cm}{\ttfamily [protected]}}
+
+Obiekt gry, reprezentujący jej logikę \mbox{\label{class_game_state_af4968bafbd8dc63dfad9316051365f50}} 
+\index{GameState@{GameState}!gameView@{gameView}}
+\index{gameView@{gameView}!GameState@{GameState}}
+\subsubsection{gameView}
+{\footnotesize\ttfamily \textbf{ Game\+G\+U\+I\+View} Game\+State\+::game\+View\hspace{0.3cm}{\ttfamily [protected]}}
+
+Obiekt gry reprezentujący jej graficzną prezentację 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Game\+State.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Game\+State.\+cpp\end{DoxyCompactItemize}

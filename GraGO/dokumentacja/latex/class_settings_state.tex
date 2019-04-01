@@ -1,0 +1,107 @@
+\section{Dokumentacja klasy Settings\+State}
+\label{class_settings_state}\index{SettingsState@{SettingsState}}
+
+
+Klasa reprezentująca stan gry typu ustawienia.  
+
+
+
+
+{\ttfamily \#include $<$Settings\+State.\+h$>$}
+
+Diagram dziedziczenia dla Settings\+State\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_settings_state}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Settings\+State} (\textbf{ State\+Manager} $\ast$state, const \textbf{ Utilities} \&\textbf{ utilities})
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+virtual \textbf{ $\sim$\+Settings\+State} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadająca za odświeżanie stanu gry oraz graficznych elementów potomnych. \end{DoxyCompactList}\item 
+void \textbf{ draw} () const
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadająca za renderowanie stanu gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentująca stan gry typu ustawienia. 
+
+Klasa umożliwia graficzne przedstawienie ustawień gry oraz ich łatwą modyfikację użytkownikowi gry. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_settings_state_a2ea2d9e3f9b405359239451107b82d2a}} 
+\index{SettingsState@{SettingsState}!SettingsState@{SettingsState}}
+\index{SettingsState@{SettingsState}!SettingsState@{SettingsState}}
+\subsubsection{SettingsState()}
+{\footnotesize\ttfamily Settings\+State\+::\+Settings\+State (\begin{DoxyParamCaption}\item[{\textbf{ State\+Manager} $\ast$}]{state,  }\item[{const \textbf{ Utilities} \&}]{utilities }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Inicjuje podstawowe pola klasy oraz klas bazowych. Wywołuje metodę create\+G\+U\+I() tworzącą interfejs graficzny ustawień. \mbox{\label{class_settings_state_ad4644afc565db26be22a49189b1a4189}} 
+\index{SettingsState@{SettingsState}!````~SettingsState@{$\sim$SettingsState}}
+\index{````~SettingsState@{$\sim$SettingsState}!SettingsState@{SettingsState}}
+\subsubsection{$\sim$SettingsState()}
+{\footnotesize\ttfamily Settings\+State\+::$\sim$\+Settings\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destruktor. 
+
+Niszycz obiekt. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_settings_state_ae27baad0c99d27f058df59183f006e9b}} 
+\index{SettingsState@{SettingsState}!draw@{draw}}
+\index{draw@{draw}!SettingsState@{SettingsState}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void Settings\+State\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda odpowiadająca za renderowanie stanu gry. 
+
+Implementacja czysto wirtualnej metody z klasy \doxyref{Base\+State}{str.}{class_base_state}. Renderuje obiekty graficzne ustawień agregowane przez klasę bazową G\+U\+I\+Group. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_aadc7c0356e6ffbda2a51e1aaad994dfb}.
+
+\mbox{\label{class_settings_state_a19a7c04911e40ed23f29c9839c164ed2}} 
+\index{SettingsState@{SettingsState}!update@{update}}
+\index{update@{update}!SettingsState@{SettingsState}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void Settings\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda odpowiadająca za odświeżanie stanu gry oraz graficznych elementów potomnych. 
+
+Implementacja czysto wirtualnej metody z klasy \doxyref{Base\+State}{str.}{class_base_state}. Odświeżaniem zajume się metoda update dziedziczona z klasy G\+U\+I\+Group. 
+\begin{DoxyParams}{Parametry}
+{\em e} & Referencja do zdarzenia jakie wystapiło. \\
+\hline
+{\em window} & Referencja do okna aplikacji w którym należy wyrysować obiekt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ Base\+State} \doxyref{}{str.}{class_base_state_a2a79cd27f736ace4d63c996974773e99}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Settings\+State.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/Settings\+State.\+cpp\end{DoxyCompactItemize}

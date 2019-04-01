@@ -1,0 +1,297 @@
+\section{Dokumentacja klasy G\+UI\+::G\+U\+I\+Label}
+\label{class_g_u_i_1_1_g_u_i_label}\index{GUI::GUILabel@{GUI::GUILabel}}
+
+
+Klasa reprezentująca napis z tłem i obramowaniem.  
+
+
+
+
+{\ttfamily \#include $<$G\+U\+I\+Label.\+h$>$}
+
+Diagram dziedziczenia dla G\+UI\+::G\+U\+I\+Label\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_g_u_i_1_1_g_u_i_label}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ G\+U\+I\+Label} (sf\+::\+Vector2f position=sf\+::\+Vector2f(0, 0), sf\+::\+Vector2f size=sf\+::\+Vector2f(100, 100), sf\+::\+Font $\ast$font=nullptr, std\+::string text=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_ad0c44e262d3d1a93de412cfd98002d25}} 
+virtual \textbf{ $\sim$\+G\+U\+I\+Label} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ set\+Text} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia tekst etykiety. \end{DoxyCompactList}\item 
+void \textbf{ set\+Text\+Color} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia kolor tekstu. \end{DoxyCompactList}\item 
+void \textbf{ set\+Text\+Size} (unsigned size)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia rozmiar tekstu. \end{DoxyCompactList}\item 
+void \textbf{ set\+Font} (const sf\+::\+Font \&new\+Font)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia czcionkę dla tekstu. \end{DoxyCompactList}\item 
+void \textbf{ set\+Background\+Color} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia kolor tła etykiety. \end{DoxyCompactList}\item 
+void \textbf{ set\+Border\+Color} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia kolor obramowania etykiety. \end{DoxyCompactList}\item 
+void \textbf{ set\+Background\+Image} (const sf\+::\+Texture \&background)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia obrazek tła etykiety. \end{DoxyCompactList}\item 
+void \textbf{ set\+Border\+Thickness} (float thickness)
+\begin{DoxyCompactList}\small\item\em Metoda zmienia rozmiar obramowania etykiety. \end{DoxyCompactList}\item 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Renderuje napis. \end{DoxyCompactList}\item 
+void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Odświeża stan obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ set\+Size\+Derivered} ()
+\begin{DoxyCompactList}\small\item\em Metoda reagująca na zmianę rozmiaru elementu graficznego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentująca napis z tłem i obramowaniem. 
+
+Klasa odpowiadająca za graficzną reprezentację etykiet tekstowych. Umożlwia wiele sposobó ich dostosowywania. Zmiana koloru tekstu, czcionki, koloru tła itp. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_ac0ebefae105f956c19b5b15411bb3ac2}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!GUILabel@{GUILabel}}
+\index{GUILabel@{GUILabel}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{GUILabel()}
+{\footnotesize\ttfamily G\+U\+I\+::\+G\+U\+I\+Label\+::\+G\+U\+I\+Label (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position = {\ttfamily sf\+:\+:Vector2f(0,0)},  }\item[{sf\+::\+Vector2f}]{size = {\ttfamily sf\+:\+:Vector2f(100,100)},  }\item[{sf\+::\+Font $\ast$}]{font = {\ttfamily nullptr},  }\item[{std\+::string}]{text = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+Inicjuje niezbędne pola na podstawie przekazanych argumentów. Ustawia domyślne parametry etykiety. 
+\begin{DoxyParams}{Parametry}
+{\em position} & Pozycja względem rodzica. \\
+\hline
+{\em size} & Rozmiar etykiety. \\
+\hline
+{\em font} & Wskaźnik do czcionki. \\
+\hline
+{\em text} & Tekst etykiety. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_a4fcf6d49c21358f938f2367ea9dcf6fb}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!draw@{draw}}
+\index{draw@{draw}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renderuje napis. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & Obiekt na rzecz którego element jest renderowany. \\
+\hline
+{\em states} & Parametry renderowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a4ca6a6b66bde419fd2b1e80a4b54ccbf}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_ad5e9f46ea26394483408cdf83f19988a}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setBackgroundColor@{setBackgroundColor}}
+\index{setBackgroundColor@{setBackgroundColor}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setBackgroundColor()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Background\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zmienia kolor tła etykiety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & Nowy kolor tła \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_a32af7db2f420a768e9b7bb390bce5bed}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setBackgroundImage@{setBackgroundImage}}
+\index{setBackgroundImage@{setBackgroundImage}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setBackgroundImage()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Background\+Image (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{background }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zmienia obrazek tła etykiety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em background} & Nowa tekstura tła. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_af6b89c13909eb2cbe951fbf222b7b204}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setBorderColor@{setBorderColor}}
+\index{setBorderColor@{setBorderColor}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setBorderColor()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Border\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zmienia kolor obramowania etykiety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & Nowy kolor obramowania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_a28137e0e7930f8fb709baade9253c62a}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setBorderThickness@{setBorderThickness}}
+\index{setBorderThickness@{setBorderThickness}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setBorderThickness()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Border\+Thickness (\begin{DoxyParamCaption}\item[{float}]{thickness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zmienia rozmiar obramowania etykiety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em thickness} & Nowa grubość obramowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_a174b87d92796395208757467490577ca}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setFont@{setFont}}
+\index{setFont@{setFont}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setFont()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Font (\begin{DoxyParamCaption}\item[{const sf\+::\+Font \&}]{new\+Font }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia czcionkę dla tekstu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em new\+Font} & Referencja do nowej czcionki dla etykiety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_a0ebe7595708156e113c30b95ddc0cb85}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setSizeDerivered@{setSizeDerivered}}
+\index{setSizeDerivered@{setSizeDerivered}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setSizeDerivered()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Size\+Derivered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Metoda reagująca na zmianę rozmiaru elementu graficznego. 
+
+Metoda ta dziedziczona jest z klasy \doxyref{G\+U\+I\+::\+G\+U\+I\+Element}{str.}{class_g_u_i_1_1_g_u_i_element} i wywoływana jest przez metodę set\+Size tejże klasy. Implementuje zachowanie się obiektu klasy \doxyref{G\+U\+I\+::\+G\+U\+I\+Label}{str.}{class_g_u_i_1_1_g_u_i_label} po zmianie rozmiaru. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_ae2143b9625dc4175dfedeb0685b02f15}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_afcdbb1b05418b24b123c01ce9f5c39ed}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setText@{setText}}
+\index{setText@{setText}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setText()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia tekst etykiety. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em text} & Tekst etykiety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_a5e7450093dcd871c8b6a0937230450e3}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setTextColor@{setTextColor}}
+\index{setTextColor@{setTextColor}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setTextColor()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Text\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zmienia kolor tekstu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & Nowy kolor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_abe7a9eb85168f4d1b45952b1293e7cb0}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!setTextSize@{setTextSize}}
+\index{setTextSize@{setTextSize}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{setTextSize()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::set\+Text\+Size (\begin{DoxyParamCaption}\item[{unsigned}]{size }\end{DoxyParamCaption})}
+
+
+
+Metoda zmienia rozmiar tekstu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em size} & Nowy rozmiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_label_a7624f40f03fb5ce9c2c2d64053d6bfc1}} 
+\index{GUI::GUILabel@{GUI::GUILabel}!update@{update}}
+\index{update@{update}!GUI::GUILabel@{GUI::GUILabel}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Label\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Odświeża stan obiektu. 
+
+Dla napisu nie ma zastosowania. Wymaga jednak implementacji dziedzicząc z \doxyref{G\+U\+I\+Element}{str.}{class_g_u_i_1_1_g_u_i_element}. 
+\begin{DoxyParams}{Parametry}
+{\em e} & Zdarzenie \\
+\hline
+{\em window} & Okno główne aplikacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a5ca855fc851c8d575635d66fafdd3851}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Label.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Label.\+cpp\end{DoxyCompactItemize}

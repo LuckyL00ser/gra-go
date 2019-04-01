@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Dokumentacja klasy GUI::GUIElement</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>GUI</b></li><li class="navelem"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-methods">Metody chronione</a> &#124;
+<a href="class_g_u_i_1_1_g_u_i_element-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy GUI::GUIElement<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI.  
+ <a href="class_g_u_i_1_1_g_u_i_element.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_g_u_i_element_8h_source.html">GUIElement.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla GUI::GUIElement</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_g_u_i_1_1_g_u_i_element.png" usemap="#GUI::GUIElement_map" alt=""/>
+  <map id="GUI::GUIElement_map" name="GUI::GUIElement_map">
+<area href="class_g_u_i_1_1_g_u_i_button.html" title="Klasa reprezentująca przycisk." alt="GUI::GUIButton" shape="rect" coords="0,112,109,136"/>
+<area href="class_g_u_i_1_1_g_u_i_group.html" title="Klasa umożlwia grupowanie obiektów przestrzeni nazw GUI." alt="GUI::GUIGroup" shape="rect" coords="357,112,466,136"/>
+<area href="class_g_u_i_1_1_g_u_i_image.html" title="Klasa zarządza wyświetlaniem tekstur dla interfejsu graficznego GUI." alt="GUI::GUIImage" shape="rect" coords="476,112,585,136"/>
+<area href="class_g_u_i_1_1_g_u_i_label.html" title="Klasa reprezentująca napis z tłem i obramowaniem." alt="GUI::GUILabel" shape="rect" coords="595,112,704,136"/>
+<area href="class_g_u_i_1_1_g_u_i_line.html" title="Klasa reprezentująca element GUI typu linia." alt="GUI::GUILine" shape="rect" coords="714,112,823,136"/>
+<area href="class_g_u_i_1_1_g_u_i_text_field.html" title="Klasa reprezentuje elementy GUI typu pole tekstowe." alt="GUI::GUITextField" shape="rect" coords="833,112,942,136"/>
+<area href="class_g_u_i_1_1_g_u_i_tickbox.html" title="Klasa GUI typu tickbox (pole znacznikowe)" alt="GUI::GUITickbox" shape="rect" coords="0,168,109,192"/>
+<area href="class_alert_state.html" title="Klasa stanu gry wyświetlającego komunikat." alt="AlertState" shape="rect" coords="119,168,228,192"/>
+<area href="class_game_g_u_i_view.html" title="Klasa reprezentująca widok gry." alt="GameGUIView" shape="rect" coords="238,168,347,192"/>
+<area href="class_game_over_state.html" title="Stan gry informujący o zakończonej rozgrywce." alt="GameOverState" shape="rect" coords="357,168,466,192"/>
+<area href="class_menu_state.html" title="Klasa reprezntująca menu gry." alt="MenuState" shape="rect" coords="476,168,585,192"/>
+<area href="class_settings_state.html" title="Klasa reprezentująca stan gry typu ustawienia." alt="SettingsState" shape="rect" coords="595,168,704,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:acfbb5dfb1ec6a663191bc311a3daa2b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#acfbb5dfb1ec6a663191bc311a3daa2b1">GUIElement</a> (sf::Vector2f position=sf::Vector2f(0, 0), <a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *parent=nullptr, bool visi=true)</td></tr>
+<tr class="memdesc:acfbb5dfb1ec6a663191bc311a3daa2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="#acfbb5dfb1ec6a663191bc311a3daa2b1">Więcej...</a><br /></td></tr>
+<tr class="separator:acfbb5dfb1ec6a663191bc311a3daa2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98fe7eaa743fb072ed5ba499441c35d6"><td class="memItemLeft" align="right" valign="top"><a id="a98fe7eaa743fb072ed5ba499441c35d6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a98fe7eaa743fb072ed5ba499441c35d6">~GUIElement</a> ()</td></tr>
+<tr class="memdesc:a98fe7eaa743fb072ed5ba499441c35d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writualny destruktor. <br /></td></tr>
+<tr class="separator:a98fe7eaa743fb072ed5ba499441c35d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd06c15007fa48fe58890477106b781"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a1bd06c15007fa48fe58890477106b781">isVisible</a> () const</td></tr>
+<tr class="memdesc:a1bd06c15007fa48fe58890477106b781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca informację o tym czy obiekt jest widoczny.  <a href="#a1bd06c15007fa48fe58890477106b781">Więcej...</a><br /></td></tr>
+<tr class="separator:a1bd06c15007fa48fe58890477106b781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f63c98cda8525644ed6bb9a0f173d07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a2f63c98cda8525644ed6bb9a0f173d07">show</a> ()</td></tr>
+<tr class="memdesc:a2f63c98cda8525644ed6bb9a0f173d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zmienia stan obiektu na widoczny.  <a href="#a2f63c98cda8525644ed6bb9a0f173d07">Więcej...</a><br /></td></tr>
+<tr class="separator:a2f63c98cda8525644ed6bb9a0f173d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85de58e55b5ba1601e9c0978af0e5eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a85de58e55b5ba1601e9c0978af0e5eb3">hide</a> ()</td></tr>
+<tr class="memdesc:a85de58e55b5ba1601e9c0978af0e5eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zmienia stan obiektu na ukryty.  <a href="#a85de58e55b5ba1601e9c0978af0e5eb3">Więcej...</a><br /></td></tr>
+<tr class="separator:a85de58e55b5ba1601e9c0978af0e5eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2425486a1a58785a89a9d6415237b186"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a2425486a1a58785a89a9d6415237b186">getParent</a> ()</td></tr>
+<tr class="memdesc:a2425486a1a58785a89a9d6415237b186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca wskaźnik do rodzica w hierarchi GUI.  <a href="#a2425486a1a58785a89a9d6415237b186">Więcej...</a><br /></td></tr>
+<tr class="separator:a2425486a1a58785a89a9d6415237b186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64aaa7c4c2934b5fae89955fee5b403c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a64aaa7c4c2934b5fae89955fee5b403c">setParent</a> (<a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *newParent)</td></tr>
+<tr class="memdesc:a64aaa7c4c2934b5fae89955fee5b403c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rodzica w hierarchi GUI.  <a href="#a64aaa7c4c2934b5fae89955fee5b403c">Więcej...</a><br /></td></tr>
+<tr class="separator:a64aaa7c4c2934b5fae89955fee5b403c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fca754d725c0ff8e6ea5ef1b769c3c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a6fca754d725c0ff8e6ea5ef1b769c3c1">setSize</a> (sf::Vector2f s)</td></tr>
+<tr class="memdesc:a6fca754d725c0ff8e6ea5ef1b769c3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rozmiar obiektu.  <a href="#a6fca754d725c0ff8e6ea5ef1b769c3c1">Więcej...</a><br /></td></tr>
+<tr class="separator:a6fca754d725c0ff8e6ea5ef1b769c3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf6bd2a8154103cf426b61c9a56b922"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a3cf6bd2a8154103cf426b61c9a56b922">setSize</a> (float width, float height)</td></tr>
+<tr class="memdesc:a3cf6bd2a8154103cf426b61c9a56b922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rozmiar obiektu.  <a href="#a3cf6bd2a8154103cf426b61c9a56b922">Więcej...</a><br /></td></tr>
+<tr class="separator:a3cf6bd2a8154103cf426b61c9a56b922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5361b47a6c150156e046e94273728e41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a5361b47a6c150156e046e94273728e41">setSize</a> (sf::Vector2u s)</td></tr>
+<tr class="memdesc:a5361b47a6c150156e046e94273728e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwala zmienić rozmiar obiektu.  <a href="#a5361b47a6c150156e046e94273728e41">Więcej...</a><br /></td></tr>
+<tr class="separator:a5361b47a6c150156e046e94273728e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca6a6b66bde419fd2b1e80a4b54ccbf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a4ca6a6b66bde419fd2b1e80a4b54ccbf">draw</a> (sf::RenderTarget &amp;target, sf::RenderStates states) const =0</td></tr>
+<tr class="memdesc:a4ca6a6b66bde419fd2b1e80a4b54ccbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czysto wirtualna metoda odpowiadająca za renderowanie obiektu.  <a href="#a4ca6a6b66bde419fd2b1e80a4b54ccbf">Więcej...</a><br /></td></tr>
+<tr class="separator:a4ca6a6b66bde419fd2b1e80a4b54ccbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca855fc851c8d575635d66fafdd3851"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a5ca855fc851c8d575635d66fafdd3851">update</a> (sf::Event &amp;e, sf::RenderWindow &amp;window)=0</td></tr>
+<tr class="memdesc:a5ca855fc851c8d575635d66fafdd3851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czysto wirtualna metoda odpowiadająca za odświeżanie obiektu.  <a href="#a5ca855fc851c8d575635d66fafdd3851">Więcej...</a><br /></td></tr>
+<tr class="separator:a5ca855fc851c8d575635d66fafdd3851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d53875f2d198738750dfc14693cdc38"><td class="memItemLeft" align="right" valign="top">virtual sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a7d53875f2d198738750dfc14693cdc38">getSize</a> () const</td></tr>
+<tr class="memdesc:a7d53875f2d198738750dfc14693cdc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca rozmiar elementu GUI.  <a href="#a7d53875f2d198738750dfc14693cdc38">Więcej...</a><br /></td></tr>
+<tr class="separator:a7d53875f2d198738750dfc14693cdc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91649901840a0ee8b69fa12bff2705d"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#aa91649901840a0ee8b69fa12bff2705d">getPositionRealitve</a> ()</td></tr>
+<tr class="memdesc:aa91649901840a0ee8b69fa12bff2705d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca bezwzględne położenie obiektu.  <a href="#aa91649901840a0ee8b69fa12bff2705d">Więcej...</a><br /></td></tr>
+<tr class="separator:aa91649901840a0ee8b69fa12bff2705d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:ae2143b9625dc4175dfedeb0685b02f15"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html#ae2143b9625dc4175dfedeb0685b02f15">setSizeDerivered</a> ()=0</td></tr>
+<tr class="memdesc:ae2143b9625dc4175dfedeb0685b02f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja reagująca na zmianę rozmiaru obiektu.  <a href="#ae2143b9625dc4175dfedeb0685b02f15">Więcej...</a><br /></td></tr>
+<tr class="separator:ae2143b9625dc4175dfedeb0685b02f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Abstrakcyjna klasa bazowa wszystkich graficznych elementów GUI. </p>
+<p>Dostarcza wszystkim klasom pochodnym podstawowej możliwości manipulacji obiektami graficznymi. Posiada czysto wirtualne funkcje draw i update, by każdy element interfejsu mógł samodzielnie odświeżać i renderować siebie wedle indywidualnych potrzeb. Umożliwia wizualne "ukrycie" obiektu oraz maniuplację jego położeniem/punktem transformacji (dziedziczone z sf::Transformable). Wymusza w klasach potomnych implementację metody <a class="el" href="class_g_u_i_1_1_g_u_i_element.html#ae2143b9625dc4175dfedeb0685b02f15" title="Funkcja reagująca na zmianę rozmiaru obiektu.">setSizeDerivered()</a> odpowiadającej za reakcję indywidualną reakcję klasy na zewnętrzną, wymuszoną zmianę rozmiaru elementu graficznego. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="acfbb5dfb1ec6a663191bc311a3daa2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbb5dfb1ec6a663191bc311a3daa2b1">&#9670;&nbsp;</a></span>GUIElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUI::GUIElement::GUIElement </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>position</em> = <code>sf::Vector2f(0,0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visi</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+<p>Posiada parametry domyślne pozwalające na modyfikację podstawowych parametrów obiektu interfejsu graficznego. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>Pozycja elementu względem rodzica. </td></tr>
+    <tr><td class="paramname">parent</td><td>Wskaźnik na rodzica (element nadrzędny hierarchi GUI). </td></tr>
+    <tr><td class="paramname">visi</td><td>Określa czy element ma być widoczny (renderowany). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a4ca6a6b66bde419fd2b1e80a4b54ccbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca6a6b66bde419fd2b1e80a4b54ccbf">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GUI::GUIElement::draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderTarget &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderStates&#160;</td>
+          <td class="paramname"><em>states</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Czysto wirtualna metoda odpowiadająca za renderowanie obiektu. </p>
+<p>Do implementacji w klasach pochodnych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Obiekt na rzecz którego renderowany jest element (np. okno gry). </td></tr>
+    <tr><td class="paramname">states</td><td>Parametry renderowania. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+<p>Implementowany w <a class="el" href="class_g_u_i_1_1_g_u_i_button.html#aad188df5d2b38d841dab1a9574dbfcd2">GUI::GUIButton</a>, <a class="el" href="class_game_g_u_i_view.html#af930778af29e00bbb8da7d2e0c7cd143">GameGUIView</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_label.html#a4fcf6d49c21358f938f2367ea9dcf6fb">GUI::GUILabel</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_group.html#aaefc195568224ea28e819a1616a3c416">GUI::GUIGroup</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_line.html#acd7b92838ebbd6971c685c90662e6f19">GUI::GUILine</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_text_field.html#a638107ab718497338df05064bb35bbdf">GUI::GUITextField</a> i <a class="el" href="class_g_u_i_1_1_g_u_i_image.html#ae84becdfe48dda150fdf08a70ecae7c4">GUI::GUIImage</a>.</p>
+
+</div>
+</div>
+<a id="a2425486a1a58785a89a9d6415237b186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2425486a1a58785a89a9d6415237b186">&#9670;&nbsp;</a></span>getParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a>* GUI::GUIElement::getParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda zwraca wskaźnik do rodzica w hierarchi GUI. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>GUIElement* Wskaźnik na rodzica. </dd></dl>
+
+</div>
+</div>
+<a id="aa91649901840a0ee8b69fa12bff2705d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91649901840a0ee8b69fa12bff2705d">&#9670;&nbsp;</a></span>getPositionRealitve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f GUI::GUIElement::getPositionRealitve </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca bezwzględne położenie obiektu. </p>
+<p>Zwraca położenie obiektu względem okna gry a nie rodzica. </p><dl class="section return"><dt>Zwraca</dt><dd>sf::Vector2f Położenie obiektu. </dd></dl>
+
+</div>
+</div>
+<a id="a7d53875f2d198738750dfc14693cdc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d53875f2d198738750dfc14693cdc38">&#9670;&nbsp;</a></span>getSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual sf::Vector2f GUI::GUIElement::getSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zwraca rozmiar elementu GUI. </p>
+<p>Metoda wirtualna. </p><dl class="section return"><dt>Zwraca</dt><dd>sf::Vector2f Rozmiar elementu. </dd></dl>
+
+</div>
+</div>
+<a id="a85de58e55b5ba1601e9c0978af0e5eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85de58e55b5ba1601e9c0978af0e5eb3">&#9670;&nbsp;</a></span>hide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIElement::hide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda zmienia stan obiektu na ukryty. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a1bd06c15007fa48fe58890477106b781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd06c15007fa48fe58890477106b781">&#9670;&nbsp;</a></span>isVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GUI::GUIElement::isVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda zwraca informację o tym czy obiekt jest widoczny. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>bool Prawda jeśli obiekt jest widoczny. </dd></dl>
+
+</div>
+</div>
+<a id="a64aaa7c4c2934b5fae89955fee5b403c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64aaa7c4c2934b5fae89955fee5b403c">&#9670;&nbsp;</a></span>setParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIElement::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_u_i_1_1_g_u_i_element.html">GUIElement</a> *&#160;</td>
+          <td class="paramname"><em>newParent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda pozwala zmienić rodzica w hierarchi GUI. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newParent</td><td>Nowy rodzic. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a6fca754d725c0ff8e6ea5ef1b769c3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fca754d725c0ff8e6ea5ef1b769c3c1">&#9670;&nbsp;</a></span>setSize() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIElement::setSize </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda pozwala zmienić rozmiar obiektu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Nowy rozmiar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a3cf6bd2a8154103cf426b61c9a56b922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf6bd2a8154103cf426b61c9a56b922">&#9670;&nbsp;</a></span>setSize() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIElement::setSize </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda pozwala zmienić rozmiar obiektu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Nowa szerokość obiektu. </td></tr>
+    <tr><td class="paramname">height</td><td>Nowa wysokość obiektu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a5361b47a6c150156e046e94273728e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5361b47a6c150156e046e94273728e41">&#9670;&nbsp;</a></span>setSize() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIElement::setSize </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2u&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda pozwala zmienić rozmiar obiektu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Nowy rozmiar obiektu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ae2143b9625dc4175dfedeb0685b02f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2143b9625dc4175dfedeb0685b02f15">&#9670;&nbsp;</a></span>setSizeDerivered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GUI::GUIElement::setSizeDerivered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja reagująca na zmianę rozmiaru obiektu. </p>
+<p>Czysto wirtualna funkcja do implementacji w klasach bazowych. Wywoływana jest przez publiczną metodę <a class="el" href="class_g_u_i_1_1_g_u_i_element.html#a6fca754d725c0ff8e6ea5ef1b769c3c1" title="Metoda pozwala zmienić rozmiar obiektu.">setSize()</a>. Każdy potomek może indywidualnie reagować na potrzebę zmiany rozmiaru. </p>
+
+<p>Implementowany w <a class="el" href="class_g_u_i_1_1_g_u_i_button.html#a0782335a814796badf13de6f5cac0955">GUI::GUIButton</a>, <a class="el" href="class_game_g_u_i_view.html#a69cbff9153850c8ab8a16762b07be510">GameGUIView</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_group.html#a3822f6c4643a251470dfead34d234eb5">GUI::GUIGroup</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_text_field.html#a4c5741e31981bc0f9a877ce4af90f4bc">GUI::GUITextField</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_label.html#a0ebe7595708156e113c30b95ddc0cb85">GUI::GUILabel</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_line.html#a6bcc82d7690ed7db47c2a8204a6d8097">GUI::GUILine</a> i <a class="el" href="class_g_u_i_1_1_g_u_i_image.html#ae00794938cbaeb1893cdeaf6698a2ca2">GUI::GUIImage</a>.</p>
+
+</div>
+</div>
+<a id="a2f63c98cda8525644ed6bb9a0f173d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f63c98cda8525644ed6bb9a0f173d07">&#9670;&nbsp;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::GUIElement::show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda zmienia stan obiektu na widoczny. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a5ca855fc851c8d575635d66fafdd3851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca855fc851c8d575635d66fafdd3851">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GUI::GUIElement::update </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Czysto wirtualna metoda odpowiadająca za odświeżanie obiektu. </p>
+<p>Do implementacji w klasach pochodnych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Zdarzenie. </td></tr>
+    <tr><td class="paramname">window</td><td>Okno głowne gry. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+<p>Implementowany w <a class="el" href="class_g_u_i_1_1_g_u_i_button.html#a24de43c874d0ddc970700b03f24ec233">GUI::GUIButton</a>, <a class="el" href="class_game_g_u_i_view.html#a4990a39e751f85d8f25ae30b33fae5bb">GameGUIView</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_label.html#a7624f40f03fb5ce9c2c2d64053d6bfc1">GUI::GUILabel</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_group.html#ae6c42ff4c7d90095b5a7f452d4e0085d">GUI::GUIGroup</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_line.html#a002436f1fd9ac6f3e1cefa8e07375852">GUI::GUILine</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_text_field.html#a23fc31e8a2c93976e5dcd58bd0a3c1ff">GUI::GUITextField</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_tickbox.html#ae1ba0c02a5098856e9b488b57eb9cca9">GUI::GUITickbox</a>, <a class="el" href="class_settings_state.html#a19a7c04911e40ed23f29c9839c164ed2">SettingsState</a>, <a class="el" href="class_g_u_i_1_1_g_u_i_image.html#af4ba338d2471d89721eecc04b95c18b8">GUI::GUIImage</a>, <a class="el" href="class_menu_state.html#aab9ffa133893dd7c4d6756a6b3ca9c8b">MenuState</a>, <a class="el" href="class_alert_state.html#afc08c3d0bb4c5865762ce882996ffd5f">AlertState</a> i <a class="el" href="class_game_over_state.html#a57290f9ae82b16d416d6252a613c62f3">GameOverState</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>C:/Users/Karol/source/repos/GraGO/GraGO/<a class="el" href="_g_u_i_element_8h_source.html">GUIElement.h</a></li>
+<li>C:/Users/Karol/source/repos/GraGO/GraGO/GUIElement.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

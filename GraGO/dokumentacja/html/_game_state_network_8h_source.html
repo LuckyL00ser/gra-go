@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chińska Gra GO: Plik źródłowy C:/Users/Karol/source/repos/GraGO/GraGO/GameStateNetwork.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chińska Gra GO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">C:/Users/Karol/source/repos/GraGO/GraGO/GameStateNetwork.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;GameState.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;AlertState.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;NetworkThread.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;GUIImage.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">enum</span> GameActions {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    GiveColor = 0,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    GameSize = 1,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Move = 2,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Pass = 3,</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    EndGame = 4,</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    SetKomi = 5</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">enum</span> ConnectionState {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Disconnected = 0,</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Connecting = 1,</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Connected = 2,</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Running = 3</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_game_state_network.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_state_network.html">GameStateNetwork</a> :</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_game_state.html">GameState</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::mutex refreshMutex;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_network_thread.html">NetworkThread</a>&amp; networkConnection;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_g_u_i_1_1_g_u_i_button.html">GUI::GUIButton</a>* abortButton;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::thread* network;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ConnectionState currentState;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    FieldColor myColor;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> endGame();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_game_state_network.html#a615e5b3fb315080aaf13429a657779ff">GameStateNetwork</a>(<a class="code" href="class_state_manager.html">StateManager</a>* state, <span class="keyword">const</span> <a class="code" href="struct_utilities.html">Utilities</a>&amp; <a class="code" href="class_base_state.html#ad94cf2a5facbc05c79b9a549aa1a74b2">utilities</a>,<a class="code" href="class_network_thread.html">NetworkThread</a>* nt, std::thread* runningThread,FieldColor color);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_game_state_network.html#a66606e9f79ee60b676ebc5bafeee9deb">~GameStateNetwork</a>();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state_network.html#a16dd9c3357c5f9220480f0b031947da8">update</a>(sf::Event&amp; e, sf::RenderWindow&amp; window);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state_network.html#a317d2f89b4ff7eae365d50fc72cebf50">draw</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state_network.html#a128f9eefdbbed4059b8ed89a649a3d6c">processData</a>(std::string s);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state_network.html#afff1f2e622f3cb32505323ebf855c757">dataReceived</a>();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state_network.html#ac2b91efa7550c4640a8df6b381865e15">disconnected</a>();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state_network.html#a79c90dfa79c0fc09dd814b53b7d2715d">disconnect</a>();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_state_network.html#a58a4acc31baf88e069ab9e02bbab2087">putStone</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="ttc" id="class_game_state_network_html_a16dd9c3357c5f9220480f0b031947da8"><div class="ttname"><a href="class_game_state_network.html#a16dd9c3357c5f9220480f0b031947da8">GameStateNetwork::update</a></div><div class="ttdeci">void update(sf::Event &amp;e, sf::RenderWindow &amp;window)</div><div class="ttdoc">Odświeża stan obiektu, reaguje na zdarzenia.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:49</div></div>
+<div class="ttc" id="class_game_state_network_html_ac2b91efa7550c4640a8df6b381865e15"><div class="ttname"><a href="class_game_state_network.html#ac2b91efa7550c4640a8df6b381865e15">GameStateNetwork::disconnected</a></div><div class="ttdeci">void disconnected()</div><div class="ttdoc">Zmienia stan połączenia na rozłączone.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:140</div></div>
+<div class="ttc" id="class_game_state_html"><div class="ttname"><a href="class_game_state.html">GameState</a></div><div class="ttdoc">Klasa reprezentująca stan aplikacji typu gra.</div><div class="ttdef"><b>Definition:</b> GameState.h:19</div></div>
+<div class="ttc" id="class_base_state_html_ad94cf2a5facbc05c79b9a549aa1a74b2"><div class="ttname"><a href="class_base_state.html#ad94cf2a5facbc05c79b9a549aa1a74b2">BaseState::utilities</a></div><div class="ttdeci">const Utilities &amp; utilities</div><div class="ttdef"><b>Definition:</b> BaseState.h:16</div></div>
+<div class="ttc" id="class_game_state_network_html_a317d2f89b4ff7eae365d50fc72cebf50"><div class="ttname"><a href="class_game_state_network.html#a317d2f89b4ff7eae365d50fc72cebf50">GameStateNetwork::draw</a></div><div class="ttdeci">void draw() const</div><div class="ttdoc">Renderuje stan gry.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:85</div></div>
+<div class="ttc" id="struct_utilities_html"><div class="ttname"><a href="struct_utilities.html">Utilities</a></div><div class="ttdoc">Struktura przechowująca przydatne innym klasom obiekty, zmienne, charakterystyczne w całej grze.</div><div class="ttdef"><b>Definition:</b> Utilities.h:15</div></div>
+<div class="ttc" id="class_g_u_i_1_1_g_u_i_button_html"><div class="ttname"><a href="class_g_u_i_1_1_g_u_i_button.html">GUI::GUIButton</a></div><div class="ttdoc">Klasa reprezentująca przycisk.</div><div class="ttdef"><b>Definition:</b> GUIButton.h:21</div></div>
+<div class="ttc" id="class_network_thread_html"><div class="ttname"><a href="class_network_thread.html">NetworkThread</a></div><div class="ttdoc">Klasa obsługująca połączenia sieciowe.</div><div class="ttdef"><b>Definition:</b> NetworkThread.h:14</div></div>
+<div class="ttc" id="class_state_manager_html"><div class="ttname"><a href="class_state_manager.html">StateManager</a></div><div class="ttdoc">Klasa reprezentująca menadżer stanów gry.</div><div class="ttdef"><b>Definition:</b> StateManager.h:18</div></div>
+<div class="ttc" id="class_game_state_network_html_a615e5b3fb315080aaf13429a657779ff"><div class="ttname"><a href="class_game_state_network.html#a615e5b3fb315080aaf13429a657779ff">GameStateNetwork::GameStateNetwork</a></div><div class="ttdeci">GameStateNetwork(StateManager *state, const Utilities &amp;utilities, NetworkThread *nt, std::thread *runningThread, FieldColor color)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:10</div></div>
+<div class="ttc" id="class_game_state_network_html_a66606e9f79ee60b676ebc5bafeee9deb"><div class="ttname"><a href="class_game_state_network.html#a66606e9f79ee60b676ebc5bafeee9deb">GameStateNetwork::~GameStateNetwork</a></div><div class="ttdeci">~GameStateNetwork()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:40</div></div>
+<div class="ttc" id="class_game_state_network_html_afff1f2e622f3cb32505323ebf855c757"><div class="ttname"><a href="class_game_state_network.html#afff1f2e622f3cb32505323ebf855c757">GameStateNetwork::dataReceived</a></div><div class="ttdeci">void dataReceived()</div><div class="ttdoc">Metoda reaguje na odbiór danych.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:134</div></div>
+<div class="ttc" id="class_game_state_network_html_a128f9eefdbbed4059b8ed89a649a3d6c"><div class="ttname"><a href="class_game_state_network.html#a128f9eefdbbed4059b8ed89a649a3d6c">GameStateNetwork::processData</a></div><div class="ttdeci">void processData(std::string s)</div><div class="ttdoc">Metoda przetwarza odebrane z sieci dane.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:92</div></div>
+<div class="ttc" id="class_game_state_network_html"><div class="ttname"><a href="class_game_state_network.html">GameStateNetwork</a></div><div class="ttdoc">Klasa reprezentująca stan aplikacji typu gra sieciowa.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.h:30</div></div>
+<div class="ttc" id="class_game_state_network_html_a79c90dfa79c0fc09dd814b53b7d2715d"><div class="ttname"><a href="class_game_state_network.html#a79c90dfa79c0fc09dd814b53b7d2715d">GameStateNetwork::disconnect</a></div><div class="ttdeci">void disconnect()</div><div class="ttdoc">Metoda reaguje na niespodziewane rozłączenie.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:148</div></div>
+<div class="ttc" id="class_game_state_network_html_a58a4acc31baf88e069ab9e02bbab2087"><div class="ttname"><a href="class_game_state_network.html#a58a4acc31baf88e069ab9e02bbab2087">GameStateNetwork::putStone</a></div><div class="ttdeci">void putStone(unsigned int x, unsigned int y)</div><div class="ttdoc">Metoda stawiania pionu na planszy.</div><div class="ttdef"><b>Definition:</b> GameStateNetwork.cpp:161</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

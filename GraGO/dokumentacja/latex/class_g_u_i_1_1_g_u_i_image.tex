@@ -1,0 +1,166 @@
+\section{Dokumentacja klasy G\+UI\+::G\+U\+I\+Image}
+\label{class_g_u_i_1_1_g_u_i_image}\index{GUI::GUIImage@{GUI::GUIImage}}
+
+
+Klasa zarządza wyświetlaniem tekstur dla interfejsu graficznego G\+UI.  
+
+
+
+
+{\ttfamily \#include $<$G\+U\+I\+Image.\+h$>$}
+
+Diagram dziedziczenia dla G\+UI\+::G\+U\+I\+Image\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_g_u_i_1_1_g_u_i_image}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_ad319e6cfc1ba5b7a2a564d8ed28010bc}} 
+\textbf{ G\+U\+I\+Image} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\textbf{ G\+U\+I\+Image} (const sf\+::\+Texture \&tex)
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_a4c53795f3c309c444804b0d64bdfbca5}} 
+virtual \textbf{ $\sim$\+G\+U\+I\+Image} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ set\+Color} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Zmienia kolor tekstury. \end{DoxyCompactList}\item 
+void \textbf{ draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Renderuje teksture. \end{DoxyCompactList}\item 
+void \textbf{ update} (sf\+::\+Event \&e, sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Odświeża stan obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ set\+Size\+Derivered} ()
+\begin{DoxyCompactList}\small\item\em Metoda reagująca na zmianę rozmiaru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \textbf{ graphics}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa zarządza wyświetlaniem tekstur dla interfejsu graficznego G\+UI. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_a44ef4d84f5661409fea9a485e231d8ed}} 
+\index{GUI::GUIImage@{GUI::GUIImage}!GUIImage@{GUIImage}}
+\index{GUIImage@{GUIImage}!GUI::GUIImage@{GUI::GUIImage}}
+\subsubsection{GUIImage()}
+{\footnotesize\ttfamily G\+U\+I\+::\+G\+U\+I\+Image\+::\+G\+U\+I\+Image (\begin{DoxyParamCaption}\item[{const sf\+::\+Texture \&}]{tex }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+Przypisuje do tworzonego obiektu podaną w argumencie teksturę. Zmienia rozmiar obiektu na rozmiar zgodny z wielkością przekazanej tekstury. 
+\begin{DoxyParams}{Parametry}
+{\em tex} & Tekstura obrazka. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_ae84becdfe48dda150fdf08a70ecae7c4}} 
+\index{GUI::GUIImage@{GUI::GUIImage}!draw@{draw}}
+\index{draw@{draw}!GUI::GUIImage@{GUI::GUIImage}}
+\subsubsection{draw()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Image\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renderuje teksture. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & Obiekt na rzecz którego element jest renderowany. \\
+\hline
+{\em states} & Parametry renderowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a4ca6a6b66bde419fd2b1e80a4b54ccbf}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_af8c0080727d24d45cce34c1f3fcf60ef}} 
+\index{GUI::GUIImage@{GUI::GUIImage}!setColor@{setColor}}
+\index{setColor@{setColor}!GUI::GUIImage@{GUI::GUIImage}}
+\subsubsection{setColor()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Image\+::set\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zmienia kolor tekstury. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & Nowy kolor tekstury. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_ae00794938cbaeb1893cdeaf6698a2ca2}} 
+\index{GUI::GUIImage@{GUI::GUIImage}!setSizeDerivered@{setSizeDerivered}}
+\index{setSizeDerivered@{setSizeDerivered}!GUI::GUIImage@{GUI::GUIImage}}
+\subsubsection{setSizeDerivered()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Image\+::set\+Size\+Derivered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Metoda reagująca na zmianę rozmiaru. 
+
+Metoda ta dziedziczona jest z klasy \doxyref{G\+U\+I\+::\+G\+U\+I\+Element}{str.}{class_g_u_i_1_1_g_u_i_element} i wywoływana jest przez metodę set\+Size tejże klasy. Implementuje zachowanie się obiektu \doxyref{G\+U\+I\+::\+G\+U\+I\+Image}{str.}{class_g_u_i_1_1_g_u_i_image} po zmianie rozmiaru. \begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_ae2143b9625dc4175dfedeb0685b02f15}.
+
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_af4ba338d2471d89721eecc04b95c18b8}} 
+\index{GUI::GUIImage@{GUI::GUIImage}!update@{update}}
+\index{update@{update}!GUI::GUIImage@{GUI::GUIImage}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void G\+U\+I\+::\+G\+U\+I\+Image\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{e,  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Odświeża stan obiektu. 
+
+Dla obrazka nie ma zastosowania. Wymaga jednak implementacji dziedzicząc z \doxyref{G\+U\+I\+Element}{str.}{class_g_u_i_1_1_g_u_i_element}. 
+\begin{DoxyParams}{Parametry}
+{\em e} & Zdarzenie \\
+\hline
+{\em window} & Okno główne aplikacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+
+Implementuje \textbf{ G\+U\+I\+::\+G\+U\+I\+Element} \doxyref{}{str.}{class_g_u_i_1_1_g_u_i_element_a5ca855fc851c8d575635d66fafdd3851}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{class_g_u_i_1_1_g_u_i_image_a339c69f8761efd38808c6ffa360e071b}} 
+\index{GUI::GUIImage@{GUI::GUIImage}!graphics@{graphics}}
+\index{graphics@{graphics}!GUI::GUIImage@{GUI::GUIImage}}
+\subsubsection{graphics}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape G\+U\+I\+::\+G\+U\+I\+Image\+::graphics\hspace{0.3cm}{\ttfamily [protected]}}
+
+Obiekt reprezentujący wyświetlaną grafikę -\/ obrazek 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Image.\+h\item 
+C\+:/\+Users/\+Karol/source/repos/\+Gra\+G\+O/\+Gra\+G\+O/G\+U\+I\+Image.\+cpp\end{DoxyCompactItemize}
